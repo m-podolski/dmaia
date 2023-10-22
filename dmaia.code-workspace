@@ -1,7 +1,11 @@
 {
-	"folders": [
-		{
-			"path": "."
-		}
-	]
+  "folders": [
+    {
+      "path": "."
+    }
+  ],
+  "settings": {
+    "markdownlint.config": { "ol-prefix": false, "blanks-around-lists": false },
+    "markdown.extension.orderedList.autoRenumber": false
+  }
 }
