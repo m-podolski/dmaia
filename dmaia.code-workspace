@@ -6,6 +6,10 @@
   ],
   "settings": {
     "markdownlint.config": { "ol-prefix": false, "blanks-around-lists": false },
-    "markdown.extension.orderedList.autoRenumber": false
+    "markdown.extension.orderedList.autoRenumber": false,
+    "insert-unicode.favorites": {
+      "directories": {},
+      "items": [[172], [8743], [8744], [8658], [8660], [8853]]
+    }
   }
 }
