@@ -5,11 +5,31 @@
     }
   ],
   "settings": {
-    "markdownlint.config": { "ol-prefix": false, "blanks-around-lists": false },
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.recipe.default": "latexmk (xelatex)",
+    "markdownlint.config": {
+      "ol-prefix": false,
+      "blanks-around-lists": false,
+      "no-inline-html": false
+    },
     "markdown.extension.orderedList.autoRenumber": false,
     "insert-unicode.favorites": {
       "directories": {},
-      "items": [[172], [8743], [8744], [8658], [8660], [8853]]
+      "items": [
+        [172],
+        [8743],
+        [8744],
+        [8853],
+        [8801],
+        [8594],
+        [8596],
+        [8593],
+        [8595],
+        [10761]
+      ]
+    },
+    "files.watcherExclude": {
+      "**/target": true
     }
   }
 }

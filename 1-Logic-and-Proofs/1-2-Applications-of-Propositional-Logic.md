@@ -146,4 +146,4 @@ sign on the first door reads “In this room there is a lady, and in the other o
 41. Find the output of each of these combinatorial circuits.
 
 - (a) $¬(p ∧ (q ∨ ¬r))$
-- (b) $(¬p ∧ ¬q) ∨ (p ∧ r)$
+- (b) $(¬p ∧ ¬q) ∨ (p ∧ r)≡ \equiv$

@@ -1,0 +1,69 @@
+\documentclass[a5paper,14pt]{memoir}
+\usepackage[margin=0.5cm]{geometry}
+\usepackage{enumitem}
+\setlist[enumerate]{left=0em}
+\setlist[itemize]{left=0em}
+
+\usepackage{fontspec}
+\usepackage{unicode-math}
+\setmainfont{Fira Sans}
+\setmathfont{Noto Sans Math}
+% \setmathfont{DejaVu Math TeX Gyre}
+
+\usepackage{amsmath}
+
+\title{1.4 Predicates and Quantifiers}
+\author{}
+\date{}
+
+\begin{document}
+
+\maketitle
+
+\[
+  ∀X [ ∅ ∉ X ⇒ ∃f:X ⟶  ⋃ X\ ∀A ∈ X (f(A) ∈ A ) ]\]
+
+
+\begin{enumerate}
+  \item (*) Show that ¬ and ∧ form a functionally complete collection of logical operators. [Hint: Firt use a De Morgan law to show that $p ∨ q$ is logically equivalent to $¬(¬p ∧ ¬q)$.]
+        \begin{itemize}
+          \item De Morgans law shows that the negation of $¬(¬p ∧ ¬q)$ is $p ∨ q$ and vice versa. Each occurrence of $∨$ can therefore be expressed with $¬$ and $∧$. Applying this to the disjunctive normal form which can be used to express any compund proposition gives us
+          \item $p1 ∨ p2 ∨ ··· ∨ pn$
+          \item $\bigwedge_{r=0}^{1} \bigwedge_{s=0}^{1}\bigwedge_{n=1}^{4}\bigvee_{i=1}^{2}\bigvee_{j=1}^{2} p(2r + i, 2s + j, n)$
+          \item $¬(¬p1 ∧ ¬p2 ∧ ··· ∧ ¬pn)$
+          \item therefore $¬$ and $∧$ are sufficient to express any compound proposition.
+        \end{itemize}
+  \item First item
+        \begin{itemize}
+          \item First item
+                $$
+                  \begin{array}{|c c|c|c|}
+                    p & q & p ∨ q & p ∧ (p ∨ q) \\
+                    \hline
+                    T & T & T     & T           \\
+                    T & F & T     & T           \\
+                    F & T & T     & F           \\
+                    F & F & F     & F           \\
+                  \end{array}
+                $$
+          \item Second item
+                \begin{equation}
+                  y = \frac{-b \pm \sqrt{b^2 - 4ac}}{2a}
+                \end{equation}
+          \item Third item
+        \end{itemize}
+  \item Second item
+        \begin{align*}
+          p ∧ (p → q) → q & ≡ ¬(p ∧ (¬p ∨ q)) ∨ q                    \\
+                          & ≡ (\neg p \lor \neg (\neg p \lor q)) ∨ q \\
+                          & ≡ ¬p ∨ ((p ∧ ¬q) ∨ q)                    \\
+                          & ≡ ¬p ∨ ((q ∨ p) ∧ (q ∨ ¬q))              \\
+                          & ≡ ¬p ∨ ((q ∨ p) ∧ T)                     \\
+                          & ≡ ¬p ∨ q ∨ p                             \\
+                          & ≡ T ∨ q                                  \\
+                          & ≡ T
+        \end{align*}
+  \item Third item
+\end{enumerate}
+
+\end{document}
