@@ -10,23 +10,32 @@
     "markdownlint.config": {
       "ol-prefix": false,
       "blanks-around-lists": false,
-      "no-inline-html": false
+      "no-inline-html": false,
+      "no-space-in-code": false
     },
     "markdown.extension.orderedList.autoRenumber": false,
     "insert-unicode.favorites": {
-      "directories": {},
-      "items": [
-        [172],
-        [8743],
-        [8744],
-        [8853],
-        [8801],
-        [8594],
-        [8596],
-        [8593],
-        [8595],
-        [10761]
-      ]
+      "directories": {
+        "Propositions": {
+          "directories": {},
+          "items": [
+            [172],
+            [8743],
+            [8744],
+            [8853],
+            [8801],
+            [8594],
+            [8596],
+            [8593],
+            [8595]
+          ]
+        },
+        "Quantifiers": {
+          "directories": {},
+          "items": [[8704], [8707]]
+        }
+      },
+      "items": [[10761], [8800]]
     },
     "files.watcherExclude": {
       "**/target": true
