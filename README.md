@@ -1,13 +1,22 @@
 # Rosen, Discrete Mathematics and Its Applications, 7th Edition
 
+## History
+
 Pages 1 - 888
 
 Chapter 1 (1 - 115)
   20.10.23 -
 
-## Exercise Formatting
+## Chapters requiring calculus
 
-(find opening comment)
+- 3.2 The Growth of functions (OCS)
+- 5.1 Mathematical Induction
+- 5.5 Program Correctness (OCS)
+- 7.3 Bayes Theorem (OM)
+- 8.4 Generating Functions (OM)
+- 9.5 Equivalence Relations
+
+## Exercise Formatting
 
 ### Cleaning
 

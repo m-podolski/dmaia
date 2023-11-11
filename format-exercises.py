@@ -1,6 +1,6 @@
 import re
 
-input_file = "1-Logic-and-Proofs/1-5-Nested-Quantifiers.md"
+input_file = "new.md"
 
 regex_patterns: dict[re.Pattern[str], str] = {
     # Clean

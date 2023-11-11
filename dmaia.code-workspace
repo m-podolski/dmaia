@@ -16,7 +16,11 @@
     "markdown.extension.orderedList.autoRenumber": false,
     "insert-unicode.favorites": {
       "directories": {
-        "Propositions": {
+        "Operators": {
+          "directories": {},
+          "items": [[10761], [8800]]
+        },
+        "Logic": {
           "directories": {},
           "items": [
             [172],
@@ -27,15 +31,17 @@
             [8594],
             [8596],
             [8593],
-            [8595]
+            [8595],
+            [8704],
+            [8707]
           ]
         },
-        "Quantifiers": {
+        "Symbols": {
           "directories": {},
-          "items": [[8704], [8707]]
+          "items": [[10060], [10062]]
         }
       },
-      "items": [[10761], [8800]]
+      "items": []
     },
     "files.watcherExclude": {
       "**/target": true
