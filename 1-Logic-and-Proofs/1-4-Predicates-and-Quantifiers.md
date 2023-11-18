@@ -58,7 +58,7 @@
 
 8. Translate these statements into English, where R(x) is “x is a rabbit” and H (x) is “x hops” and the domain consists of all animals.
 - **(a) $∀x(R(x) → H (x))$**
-  - !!! If an animal hops, its a rabbit.
+  - ❌ If an animal hops, its a rabbit.
 - (b) $∀x(R(x) ∧ H (x))$
   - All animals are hopping rabbits.
 - (c) $∃x(R(x) → H (x))$
@@ -87,7 +87,7 @@ or knows C++.
 - (d) No student in your class has a cat, a dog, and a ferret.
   - $¬∃x(C(x) ∧ D(x) ∧ F(x))$
 - **(e) For each of the three animals, cats, dogs, and ferrets, there is a student in your class who has this animal as a pet.**
-  - !!! $∃x(C(x) ∨ D(x) ∨ F(x))$
+  - ❌ $∃x(C(x) ∨ D(x) ∨ F(x))$
 
 11. Let P (x) be the statement “x = x².” If the domain consists of the integers, what are these truth values?
 - (a) $P(0)$ T
@@ -178,9 +178,9 @@ or knows C++.
 - (b) $∀xP(x)$
   - $P(-5) ∧ P(-3) ∧ P(-1) ∧ P(1) ∧ P(3) ∧ P(5)$
 - (c) $∀x((x = 1) → P(x))$
-  - (!!!) $((-5 = 1) → P(-5)) ∧ ((-3 = 1) → P(-3)) ∧ ((-1 = 1) → P(-1)) ∧ ((1 = 1) → P(1)) ∧ ((3 = 1) → P(3)) ∧ ((5 = 1) → P(5))$
-  - (!!!) $(T) ∧ (T) ∧ (T) ∧ P(1) ∧ (T) ∧ (T)$
-  - (!!!) $P(1)$
+  - (❌) $((-5 = 1) → P(-5)) ∧ ((-3 = 1) → P(-3)) ∧ ((-1 = 1) → P(-1)) ∧ ((1 = 1) → P(1)) ∧ ((3 = 1) → P(3)) ∧ ((5 = 1) → P(5))$
+  - (❌) $(T) ∧ (T) ∧ (T) ∧ P(1) ∧ (T) ∧ (T)$
+  - (❌) $P(1)$
 - (d) $∃x((x ≥ 0) ∧ P(x))$
   - $F ∨ F ∨ F ∨ P(1) ∨ P(3) ∨ P(5)$
   - $P(1) ∨ P(3) ∨ P(5)$
@@ -255,7 +255,7 @@ or knows C++.
 - (e) Everyone is your friend and is perfect.
   - $∀x (F(x) ∧ P(x))$
 - **(f) Not everybody is your friend or someone is not perfect.**
-  - !!! $∀x ¬F(x) ∨ ∃x ¬P(x)$
+  - ❌ $∀x ¬F(x) ∨ ∃x ¬P(x)$
 
 26. Translate each of these statements into logical expressions in three different ways by varying the domain and by using predicates with one and with two variables.
 - (a) Someone in your school has visited Uzbekistan.
@@ -263,9 +263,9 @@ or knows C++.
   - all: $∃x (Y(x) ∧ U(x))$
   - all: $∃x (Y(x) ∧ V(x, Uzbekistan))$
 - **(b) Everyone in your class has studied calculus and C++.**
-  - !!! pupils: $∃x S(x)$
-  - !!! all: $∃x (Y(x) ∧ S(x))$
-  - !!! all: $∃x (Y(x) ∧ S(x, CPP, Calculus))$
+  - ❌ pupils: $∃x S(x)$
+  - ❌ all: $∃x (Y(x) ∧ S(x))$
+  - ❌ all: $∃x (Y(x) ∧ S(x, CPP, Calculus))$
 - (c) No one in your school owns both a bicycle and a motorcycle.
   - pupils: $¬∃x O(x)$
   - all: $¬∃x (Y(x) ∧ O(x))$
@@ -309,20 +309,20 @@ or knows C++.
 - (c) Everything is in the correct place and in excellent condition.
   - $∀x (P(x) ∧ C(x))$
 - **(d) Nothing is in the correct place and is in excellent condition.**
-  - !!! $¬∀x (P(x) ∧ C(x))$
+  - ❌ $¬∀x (P(x) ∧ C(x))$
   - $∀x ¬(P(x) ∧ C(x))$
 - **(e) One of your tools is not in the correct place, but it is in excellent condition.**
-  - !!! $∃x (¬P(x) ∧ C(x))$
+  - ❌ $∃x (¬P(x) ∧ C(x))$
 
 29. Express each of these statements using logical operators, predicates, and quantifiers.
 - **(a) Some propositions are tautologies.**
-  - !!! $∃x (P(x) ∧ T(x))$
+  - ❌ $∃x (P(x) ∧ T(x))$
 - **(b) The negation of a contradiction is a tautology.**
-  - !!! $∀x ((N(x) ∧ C(x)) → T(x))$
+  - ❌ $∀x ((N(x) ∧ C(x)) → T(x))$
 - **(c) The disjunction of two contingencies can be a tautology.**
-  - !!! $∃x ((C(x) ∨ C(x)) ∧ T(x))$
+  - ❌ $∃x ((C(x) ∨ C(x)) ∧ T(x))$
 - **(d) The conjunction of two tautologies is a tautology.**
-  - !!! $∀x ((T(x) ∧ T(x)) → T(x))$
+  - ❌ $∀x ((T(x) ∧ T(x)) → T(x))$
 
 30. Suppose the domain of the propositional function P (x, y) consists of pairs x and y, where x is 1, 2, or 3 and y is 1, 2, or 3. Write out these propositions using disjunctions and conjunctions.
 - (a) ∃x P (x, 3)
@@ -347,8 +347,8 @@ or knows C++.
 32. Express each of these statements using quantifiers. Then form the negation of the statement so that no negation is to the left of a quantifier. Next, express the negation in simple English. (Do not simply use the phrase “It is not the case that.”)
 - **(a) All dogs have fleas.**
   - $∀x F(x)$
-  - !!! $∀x ¬F(x)$
-  - !!! No dog has fleas.
+  - ❌ $∀x ¬F(x)$
+  - ❌ No dog has fleas.
 - (b) There is a horse that can add.
   - $∃x A(x)$
   - $∀x ¬A(x)$
@@ -363,8 +363,8 @@ or knows C++.
   - There is a monkey that can speak French.
 - **(e) There exists a pig that can swim and catch fish.**
   - $∃x (S(x) ∧ F(x))$
-  - !!! $∀x (¬S(x) ∧ ¬F(x))$
-  - !!! There is no pig that can swim and fish.
+  - ❌ $∀x (¬S(x) ∧ ¬F(x))$
+  - ❌ There is no pig that can swim and fish.
 
 33. Express each of these statements using quantifiers. Then form the negation of the statement, so that no negation is to the left of a quantifier. Next, express the negation in simple English. (Do not simply use the phrase “It is not the case that.”)
 - (a) Some old dogs can learn new tricks.
@@ -385,8 +385,8 @@ or knows C++.
   - There is a dog that can talk.
 - **(e) There is no one in this class who knows French and Russian.**
   - $∀x ¬(F(x) ∧ R(x))$
-  - !!! $∃x (F(x) ∨ R(x))$
-  - !!! There is someone in this class who knows French or Russian.
+  - ❌ $∃x (F(x) ∨ R(x))$
+  - ❌ There is someone in this class who knows French or Russian.
 
 34. Express the negation of these propositions using quantifiers, and then express the negation in English.
 - (a) Some drivers do not obey the speed limit.
@@ -412,7 +412,7 @@ or knows C++.
 
 36. Find a counterexample, if possible, to these universally quantified statements, where the domain for all variables consists of all real numbers.
 - (a) $∀x(x^2 ≠ x)$: 1
-- **!!! (b) $∀x(x^2 ≠ 2)$: T**
+- **❌ (b) $∀x(x^2 ≠ 2)$: T**
 - (c) $∀x(|x| > 0)$: 0
 
 37. Express each of these statements using predicates and quantifiers.
@@ -445,7 +445,7 @@ Exercises 38–42 deal with the translation between system specification and log
 - (b) $∀pB(p) → ∃j Q(j )$
   - If all printers are busy, some jobs will be queued.
 - **(c) $∃j (Q(j ) ∧ L(j )) → ∃pF (p)$**
-  - !!! If there is a queued or lost job, some printers will be out of service.
+  - ❌ If there is a queued or lost job, some printers will be out of service.
 - (d) $(∀pB(p) ∧ ∀j Q(j )) → ∃j L(j )$
   - If all Printers are busy and all jobs are queued, some jobs will be lost.
 
@@ -461,11 +461,11 @@ Exercises 38–42 deal with the translation between system specification and log
 
 41. Express each of these system specifications using predicates, quantifiers, and logical connectives.
 - **(a) At least one mail message, among the nonempty set of messages, can be saved if there is a disk with more than 10 kilobytes of free space.**
-  - !!! $∃m(∃dS(10) → S(m))$
+  - ❌ $∃m(∃dS(10) → S(m))$
 - **(b) Whenever there is an active alert, all queued messages are transmitted.**
-  - !!! $A → ∀mT(m)$
+  - ❌ $A → ∀mT(m)$
 - **(c) The diagnostic monitor tracks the status of all systems except the main console.**
-  - !!! $∃s¬M(s)$
+  - ❌ $∃s¬M(s)$
 - (d) Each participant on the conference call whom the host of the call did not put on a special list was billed.
   - $∀p(¬L(p) → B(p))$
 
@@ -511,7 +511,7 @@ Exercises 46–49 establish rules for null quantification that we can use when a
 - (a) $∀x(P(x) → A) ≡ ∃xP(x) → A$
   - If P(x) is false for all x on the left then it will also be false for some x on the right. If x is true for all x on the left it will also be true for some x on the right and the expression reduces to the value of A.
 - **(b) $∃x(P(x) → A) ≡ ∀xP(x) → A$**
-  - !!! If P(x) is false for some x on the left, then it will also render ∀xP(x) false and both sides are true. If P(x) is true for some x the left side reduces to the value of A and the right side will be true due to the condition being false.
+  - ❌ If P(x) is false for some x on the left, then it will also render ∀xP(x) false and both sides are true. If P(x) is true for some x the left side reduces to the value of A and the right side will be true due to the condition being false.
 
 50. Show that $∀xP(x) ∨ ∀xQ(x)$ and $∀x(P(x) ∨ Q(x))$ are not logically equivalent.
     - These are not equivalent because in the first case P or Q have to be true for ALL x while on the right either P or Q has to be true for every x.
@@ -522,7 +522,7 @@ Exercises 46–49 establish rules for null quantification that we can use when a
 52. As mentioned in the text, the notation ∃!xP (x) denotes “There exists a unique x such that P (x) is true.” If the domain consists of all integers, what are the truth values of these statements?
 - (a) $∃!x(x > 1)$: F
 - (b) $∃!x(x^2 = 1)$: F
-- **(c) $∃!x(x + 3 = 2x)$: !!! F**
+- **(c) $∃!x(x + 3 = 2x)$: ❌ F**
 - (d) $∃!x(x = x + 1)$: F
 
 53. What are the truth values of these statements?
@@ -573,7 +573,7 @@ Exercises 59–62 are based on questions found in the book Symbolic Logic by Lew
 - (c) No professors are vain.
   - $∀x(P(x) → ¬R(x))$
 - **(d) Does (c) follow from (a) and (b)?**
-  - !!! Yes
+  - ❌ Yes
 
 60. Let P(x), Q(x), and R(x) be the statements “x is a clear explanation,” “x is satisfactory,” and “x is an excuse,” respectively. Suppose that the domain for x consists of all English text. Express each of these statements using quantifiers, logical connectives, and P (x), Q(x), and R(x).
 - (a) All clear explanations are satisfactory.
@@ -583,7 +583,7 @@ Exercises 59–62 are based on questions found in the book Symbolic Logic by Lew
 - (c) Some excuses are not clear explanations.
   - $∃x(R(x) ∧ ¬P(x))$
 - **(d) (∗) Does (c) follow from (a) and (b)?**
-  - !!! No.
+  - ❌ No.
 
 61. Let P(x), Q(x), R(x), and S(x) be the statements “x is a baby,” “x is logical,” “x is able to manage a crocodile,” and “x is despised,” respectively. Suppose that the domain consists of all people. Express each of these statements using quantifiers; logical connectives; and P(x), Q(x), R(x), and S(x).
 - (a) Babies are illogical.

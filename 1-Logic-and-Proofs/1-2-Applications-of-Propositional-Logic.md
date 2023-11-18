@@ -8,12 +8,12 @@
 
 3. **You can graduate only if you have completed the require- ments of your major and you do not owe money to the university and you do not have an overdue library book. Express your answer in terms of g: “You can graduate,” m: “You owe money to the university,” r: “You have com- pleted the requirements of your major,” and b: “You have an overdue library book.”**
 
-    - !!! $(r \land \neg m \land \neg b) \implies g$
+    - ❌ $(r \land \neg m \land \neg b) \implies g$
     - $g \implies (r \land \neg m \land \neg b)$
 
 5. **You are eligible to be President of the U.S.A. only if you are at least 35 years old, were born in the U.S.A, or at the time of your birth both of your parents were citizens, and you have lived at least 14 years in the country. Express your answer in terms of e: “You are eligible to be Pres- ident of the U.S.A.,” a: “You are at least 35 years old,” b: “You were born in the U.S.A,” p: “At the time of your birth, both of your parents where citizens,” and r: “You have lived at least 14 years in the U.S.A.”**
 
-    - !!! $e \implies (a \lor b \lor p) \land r$
+    - ❌ $e \implies (a \lor b \lor p) \land r$
     - $e \implies (a \land (b \lor p) \land r)$
 
 7. Express these system specifications using the proposi- tions p “The message is scanned for viruses” and q “The message was sent from an unknown system” together with logical connectives (including negations).
@@ -74,7 +74,7 @@
 19. **A says “At least one of us is a knave” and B says nothing.**
 
     - if A = Knight, then B = Knave
-    - !!! B = Knave, A = ?
+    - ❌ B = Knave, A = ?
     - if A = Knave, then A AND B = Knights -> Contradiction
     - A = Knight, B = Knave
 
@@ -87,15 +87,15 @@
 
 21. **A says “I am a knave or B is a knight” and B says nothing.**
 
-    - !!! If A = T, then B = F
-    - !!! If A = F, then B = F
+    - ❌ If A = T, then B = F
+    - ❌ If A = F, then B = F
     - If A = T, then B = T
     - If A = F, then statement is contradictory
 
 23. **A says “We are both knaves” and B says nothing.**
 
     - $a \land b$
-    - !!! A = T, then B = T
+    - ❌ A = T, then B = T
     - A = T, then contradiction
     - A = F, then B = T
 
@@ -123,7 +123,7 @@
 35. **A detective has interviewed four witnesses to a crime. From the stories of the witnesses the detective has con- cluded that if the butler is telling the truth then so is the cook; the cook and the gardener cannot both be telling the truth; the gardener and the handyman are not both lying; and if the handyman is telling the truth then the cook is lying. For each of the four witnesses, can the detective de- termine whether that person is telling the truth or lying? Explain your reasoning.**
 
     - $b \implies c$
-    - !!! $c ⊕ g$
+    - ❌ $c ⊕ g$
     - $¬(c ∧ g)$ ... $¬c ∨ ¬g$
     - $¬(¬g ∧ ¬h)$ ... $g ∨ h$
     - $h \implies ¬c$

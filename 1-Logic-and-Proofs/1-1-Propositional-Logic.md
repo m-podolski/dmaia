@@ -134,7 +134,7 @@ connectives (including negations).
 - (d) It is not safe to hike on the trail, but grizzly bears have not been seen in the area and the berries along the trail are ripe.
   - $\neg q \land \neg p \land r$
 - (e) For hiking on the trail to be safe, it is necessary but not sufficient that berries not be ripe along the trail and for grizzly bears not to have been seen in the area.
-  - !!! $(\neg r \land \neg p) \implies q$
+  - ❌ $(\neg r \land \neg p) \implies q$
   - $(q \implies (\neg r \land \neg p)) \land \neg((\neg r \land \neg p) \implies q)$
 - (f) Hiking is not safe on the trail whenever grizzly bears have been seen in the area and berries are ripe along the trail.
   - $(p \land r) \implies \neg q$
@@ -180,17 +180,17 @@ is true or false.
 - (b) The apple trees will bloom if it stays warm for a week.
   - if it stays warm ... , then the trees bloom
 - **(c) That the Pistons win the championship implies that they beat the Lakers.**
-  - !!! if they beat the Lakers ... the Pistons win
+  - ❌ if they beat the Lakers ... the Pistons win
   - If the Pistons win ...
 - **(d) It is necessary to walk 8 miles to get to the top of Long’s Peak.**
-  - !!! If you walk 8 miles, then you get to the top ...
+  - ❌ If you walk 8 miles, then you get to the top ...
   - If you get to the top ... , then you must have walked ...
 - (e) To get tenure as a professor, it is sufficient to be world- famous.
   - If one is world-famous, then one can get a tenure ...
 - (f) If you drive more than 400 miles, you will need to buy gasoline.
   - (same)
 - **(g) Your guarantee is good only if you bought your CD player less than 90 days ago.**
-  - !!! if you baught ... , then your guarantee is good
+  - ❌ if you baught ... , then your guarantee is good
   - If your guarantee is good ...
 - (h) Jan will go swimming unless the water is too cold.
   - If the water is not too cold, then Jan will ...

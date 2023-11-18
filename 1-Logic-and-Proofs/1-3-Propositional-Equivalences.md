@@ -192,17 +192,16 @@ tautology without using truth tables.
 $$
 ¬p ∧ (p ∨ q) → q \\
 ≡ ¬(¬p ∧ (p ∨ q)) ∨ q \\
-≡ !!! (p ∧ ¬(p ∨ q)) ∨ q \\
-≡ !!! (p ∧ ¬p ∧ ¬q) ∨ q \\
-≡ !!! (F ∧ ¬q) ∨ q \\
-≡ !!! ¬q ∨ q \\
-≡ !!! T \\
+≡ ❌ (p ∧ ¬(p ∨ q)) ∨ q \\
+≡ ❌ (p ∧ ¬p ∧ ¬q) ∨ q \\
+≡ ❌ (F ∧ ¬q) ∨ q \\
+≡ ❌ ¬q ∨ q \\
+≡ ❌ T \\
 ≡ p ∨ ¬(p ∨ q) ∨ q \\
 ≡ (p ∨ q) ∨ ¬(p ∨ q) \\
 ≡ T \\
 $$
 
-// TODO
 - **(b) [(p → q) ∧ (q → r)] → (p → r)**
 $$
 [(p → q) ∧ (q → r)] → (p → r) \\
@@ -256,8 +255,8 @@ F & F & F & F\\
 $$
 
 14. **- Determine whether (¬p ∧ (p → q)) → ¬q is a tautology**
-    - !!! p has to be false
-    - !!! if p is false, q could either be true or false
+    - ❌ p has to be false
+    - ❌ if p is false, q could either be true or false
     - This says that if q is the conclusion of p and p is false, then q is false. But if p is false, q could either be true or false to render the antecedent true.
 
 15. Determine whether (¬q ∧ (p → q)) → ¬p is a tautology.
@@ -271,7 +270,7 @@ $$
 16. Show that p ↔ q and (p ∧ q) ∨ (¬p ∧ ¬q) are logically equivalent.
 
 17. **+Show that ¬(p ↔ q) and p ↔ ¬q are logically equivalent.**
-    - !!! The first biconditional will be true if p and q are false and false if they are true. The second implies that p and q have to have different values.
+    - ❌ The first biconditional will be true if p and q are false and false if they are true. The second implies that p and q have to have different values.
     - as a biconditional is true whenever both values are the same, a biconditional with one negated side will only be true, whenever both sides are different, which is the same as negating a complete biconditional.
 
 18. Show that p → q and ¬q → ¬p are logically equivalent.
@@ -290,11 +289,11 @@ $$
     - The first proposition essentially means that q and r are true if p is true which is exactly what the second one says.
 
 23. **+ Show that (p → r) ∧ (q → r) and (p ∨ q) → r are logically equivalent.**
-    - !!! Assuming (p → r) ∧ (q → r) to be true we want to show that (p ∨ q) → r is true which means r is true whenever p OR q is true OR both are true. Applying this to the first proposition with p, q and are being true we can see that this holds.
+    - ❌ Assuming (p → r) ∧ (q → r) to be true we want to show that (p ∨ q) → r is true which means r is true whenever p OR q is true OR both are true. Applying this to the first proposition with p, q and are being true we can see that this holds.
     - The first part will be true if either p and q are false or if p and q are true as well as r. Both applies to the second part.
 
 24. **+ Show that (p → q) ∨ (p → r) and p → (q ∨ r) are logically equivalent.**
-    - !!! As p → (q ∨ r) is only false if p is true and q ∨ r is false, it follows that q and r would be false. Applying this to the first proposition it is rendered false as well. If either q or r are are true both propositions are true.
+    - ❌ As p → (q ∨ r) is only false if p is true and q ∨ r is false, it follows that q and r would be false. Applying this to the first proposition it is rendered false as well. If either q or r are are true both propositions are true.
     - p → (q ∨ r) is only true if p is false or if it is true and at least one of q and r is true.
 
 25. Show that (p → r) ∨ (q → r) and (p ∧ q) → r are logically equivalent.
@@ -310,7 +309,7 @@ $$
     - As both propositions are negated together their sameness is still given.
 
 29. **- Show that (p → q) ∧ (q → r) → (p → r) is a tautology.**
-    - !!! This would be a tautology if the top-level-conditional cannot be false. So (p → q) ∧ (q → r) cannot be true while (p → r) is false. p → r will be false if p is true and r is false. Applying this to the antecedent we see that it must be false for any q.
+    - ❌ This would be a tautology if the top-level-conditional cannot be false. So (p → q) ∧ (q → r) cannot be true while (p → r) is false. p → r will be false if p is true and r is false. Applying this to the antecedent we see that it must be false for any q.
 
 30. **+ Show that (p ∨ q) ∧ (¬p ∨ r) → (q ∨ r) is a tautology**
     - We will show that if p ∨ q and ¬p ∨ r are true, q ∨ r will be true. Because p is negated in one part of the antecedent one of p ∨ q and ¬p ∨ r will always be true. Therefore it is sufficient for either q or r to be true.
@@ -322,7 +321,7 @@ $$
     - This is not the same for p = true and q and r = false.
 
 33. **~ Show that (p → q) → (r → s) and (p → r) → (q → s) are not logically equivalent.**
-    - !!! For both statements to be false r → s and q → s have to be false. This means s has to be false and both r and q have to be true. Applying this to (p → q) → (r → s) this gives a false proposition only if p is false. Applying this to (p → r) → (q → s) gives
+    - ❌ For both statements to be false r → s and q → s have to be false. This means s has to be false and both r and q have to be true. Applying this to (p → q) → (r → s) this gives a false proposition only if p is false. Applying this to (p → r) → (q → s) gives
     - Assuming the first part to be false p → q would have to be true and r → s would have to be false. This implies r is true and s is false.
 
 34. Find the dual of each of these compound propositions.
@@ -334,7 +333,7 @@ $$
   - (p ∨ ¬q) ∧ (q ∨ T)
 
 36. **+ When does s∗ = s, where s is a compound proposition?**
-    - !!! p ∧ T (Identity), p ∨ p (Idempotence), p ∨ (p ∧ q) (Absorption)
+    - ❌ p ∧ T (Identity), p ∨ p (Idempotence), p ∨ (p ∧ q) (Absorption)
     - (~) p ∧ T = p ∨ F
 
 37. Show that (s∗ )∗ = s when s is a compound proposition.
@@ -407,8 +406,8 @@ $$
 
 51. **(*) Find a compound proposition logically equivalent to p → q using only the logical operator ↓.**
     - p → q
-    - !!! ¬(p ∨ q) **must be ¬ p ∨ q**
-    - !!! ((p ↓ q) ↓ (p ↓ q)) ↓ ((p ↓ q) ↓ (p ↓ q))
+    - ❌ ¬(p ∨ q) **must be ¬ p ∨ q**
+    - ❌ ((p ↓ q) ↓ (p ↓ q)) ↓ ((p ↓ q) ↓ (p ↓ q))
 
 52. Show that {|} is a functionally complete collection of logical operators.
     - As we know the disjunctive normal form can be expressed with only ¬ and ∧, we need to show that both of these operators have equivalences which only use ↑.
@@ -426,7 +425,7 @@ $$
     - p = T, q = F and r = F give T for the first part and F for the second
 
 55. **(*) How many different truth tables of compound propositions are there that involve the propositional variables p and q?**
-    - !!! To find the number of unique truth tables for all possible compound propositions, one first has to list all compound propositions involving ¬, ∧, ∨, ↑, ↓, → and ↔ and then eliminate all equivalents. The number of the remaining propositions is the solution.
+    - ❌ To find the number of unique truth tables for all possible compound propositions, one first has to list all compound propositions involving ¬, ∧, ∨, ↑, ↓, → and ↔ and then eliminate all equivalents. The number of the remaining propositions is the solution.
 
 56. Show that if p, q, and r are compound propositions such that p and q are logically equivalent and q and r are logically equivalent, then p and r are logically equivalent.
     - By the definition of logical equivalence this must be true.
@@ -435,7 +434,7 @@ $$
     - do: the directory database is opened
     - mc: the monitor is put in a closed state
     - in: the system is in its initial state
-    - !!! do → (¬in → mc)
+    - ❌ do → (¬in → mc)
     - ¬in → (do → mc)
     - do → (¬in → mc)
     - do → (in ∨ mc)
@@ -467,7 +466,7 @@ $$
 
 61. Determine whether each of these compound propositions is satisfiable.
 - **(a) (p ∨ ¬q) ∧ (¬p ∨ q) ∧ (¬p ∨ ¬q)**
-  - !!! Yes, if p and q have different values
+  - ❌ Yes, if p and q have different values
 - (b) (p → q) ∧ (p → ¬q) ∧ (¬p → q) ∧ (¬p → ¬q)
   - No, first p and q cannot both be true as this would create false conditionals. p and q having different values also doesnt work, as all permutations of values and negated values exist inside the conditonals, so one of them will always be false.
 - (c) (p ↔ q) ∧ (¬p ↔ q)
@@ -483,12 +482,12 @@ is satisfiable.
   - Yes, p=F, q=F, r=T, s=T
 
 63. **Show how the solution of a given 4 × 4 Sudoku puzzle can be found by solving a satisfiability problem.**
-    - !!! p(i, j, n): the proposition that each number n is positioned at row i, column j with all variables ranging from 1 to 4.
-    - !!! by creating a conjunction of the propositions denoting the given values, the propositions that every cell can only contain one number, that every row must contain every number, that every column must contain every number, that every subgrid must contain every number and the 64 possible position-propositions the solution can be found by determining the satisfiability of the resulting compound proposition.
+    - ❌ p(i, j, n): the proposition that each number n is positioned at row i, column j with all variables ranging from 1 to 4.
+    - ❌ by creating a conjunction of the propositions denoting the given values, the propositions that every cell can only contain one number, that every row must contain every number, that every column must contain every number, that every subgrid must contain every number and the 64 possible position-propositions the solution can be found by determining the satisfiability of the resulting compound proposition.
     - $\bigwedge_{r=0}^{1}\bigwedge_{s=0}^{1}\bigwedge_{n=1}^{4}\bigvee_{i=1}^{2}\bigvee_{j=1}^{2} p(2r + i, 2s + j, n)$
 
 64. **Construct a compound proposition that asserts that every cell of a 9 × 9 Sudoku puzzle contains at least one number.**
-    - !!! $\bigwedge_{i=1}^{9}\bigwedge_{j=1}^{9}p(i,j,n)$
+    - ❌ $\bigwedge_{i=1}^{9}\bigwedge_{j=1}^{9}p(i,j,n)$
 
 65. Explain the steps in the construction of the compound proposition given in the text that asserts that every column of a 9 × 9 Sudoku puzzle contains every number.
     - $\bigvee_{i=1}^{9}p(i,j,n)$: Every column j contains number n

@@ -16,26 +16,22 @@ Chapter 1 (1 - 115)
 - 8.4 Generating Functions (OM)
 - 9.5 Equivalence Relations
 
-## Exercise Formatting
+## Symbols
 
-### Cleaning
+❌
+: Wrong answer
 
-remove "- "-gaps
-`(\w)- (\w)` -> `$1$2`
+⭕
+: Missing answer
 
-remove "**" and "*" from before numbers and put into parens
-`^(∗{1,2}) ([\w\d]{1,2}[\.)])` -> `$2 ($1)`
+❗
+: Not Attempted (to see example solution)
 
-remove leading, trailing and in-between whitespace from part-indexes
-`^\s?(\w) ?\) ?` -> `($1) `
+❓
+: Not Attempted (too hard)
 
-### Formatting
+❔
+: Not Attempted (too easy)
 
-join lines
-`[\r\n](?!^\(\w\)|\d{1,2}\. )` -> ` `
-
-add line above intro
-`^([\d]{1,2}[\.)])` -> `\n$1`
-
-add bullets to part-indexes
-`^(\(\w\) )` -> `- $1`
+❎
+: Correct, but with a different possible solution
