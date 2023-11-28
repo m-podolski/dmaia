@@ -33,5 +33,11 @@ Chapter 1 (1 - 115)
 ❔
 : Not Attempted (too easy)
 
+🚫
+: Misinterpreted exercise
+
 ❎
-: Correct, but with a different possible solution
+: Correct (with a different possible solution)
+
+✅
+: Correct (from solutions guide)
