@@ -24,7 +24,7 @@ $$
 2. Find the argument form for the following argument and determine whether it is valid. Can we conclude that the conclusion is true if the premises are true?
 
     - $(¬l → ¬s) ∧ s → l$
-    - ❎ Yes, it is a tautology.
+    - ✅ Yes, it is a tautology.
 
 $$
 \begin{align*}
@@ -77,8 +77,8 @@ $$
     1. $¬t$
     1. $¬s$ modus tollens
     1. $(¬r ∨ ¬f) → (s ∧ l)$
-    1. ❎ $¬(s ∧ l)$ 3
-    1. ❎ $¬(¬r ∨ ¬f)$ modus tollens
+    1. ✅ $¬(s ∧ l)$ 3
+    1. ✅ $¬(¬r ∨ ¬f)$ modus tollens
     1. $r ∧ f$ De Morgans law
     1. $r$ simplification
 
@@ -86,7 +86,7 @@ $$
    - universal instantiation
 
 8. What rules of inference are used in this argument? “No man is an island. Manhattan is an island. Therefore, Manhattan is not a man.”
-    - ❎ First a negatated existential instatiation; "There is no x that is an island". It follows that if something is an island, then it is not a man. Combining this by modus ponens with "Manhattan is an island" the conclusion is "Manhattan is not a man"
+    - ✅ First a negatated existential instatiation; "There is no x that is an island". It follows that if something is an island, then it is not a man. Combining this by modus ponens with "Manhattan is an island" the conclusion is "Manhattan is not a man"
 
 9. For each of these collections of premises, what relevant conclusion or conclusions can be drawn? Explain the rules of inference used to obtain each conclusion from the premises.
 - **(a) “If I take the day off, it either rains or snows.” “I took Tuesday off or I took Thursday off.” “It was sunny on Tuesday.” “It did not snow on Thursday.”**
@@ -97,7 +97,7 @@ $$
 - (d) “Every computer science major has a personal computer.” “Ralph does not have a personal computer.” “Ann has a personal computer.”
   - First universal instantiation of the given conditional gives us "If Ralph/Ann is a CS major, then he has a PC". Combining the case "Ralph" with the second statement by modus tollens, it follows that "Ralph is not a CS major". For "Ann" no definite conclusion can be drawn.
 - (e) “What is good for corporations is good for the United States.” “What is good for the United States is good for you.” “What is good for corporations is for you to buy lots of stuff.”
-  - The first statement equals the universally quantified conditional "If x is good for corporations, then it is good for the US". The second equals "If x is good for the US, then it is good for you." The third can be used to instantiate the first conditional as "If you buying lots of stuff is good for corporations, buying lots of stuff is good for the US". ❎ Extending this by a hypothetical syllogism to the second statement, the conclusion is "If you buying lots of stuff is good for corporations, then it is good for you."
+  - The first statement equals the universally quantified conditional "If x is good for corporations, then it is good for the US". The second equals "If x is good for the US, then it is good for you." The third can be used to instantiate the first conditional as "If you buying lots of stuff is good for corporations, buying lots of stuff is good for the US". ✅ Extending this by a hypothetical syllogism to the second statement, the conclusion is "If you buying lots of stuff is good for corporations, then it is good for you."
 - (f) “All rodents gnaw their food.” “Mice are rodents.” “Rabbits do not gnaw their food.” “Bats are not rodents.”
   - "If x is a rodent, then x gnaws its food",
   - instantiate with "Mice" -> "Mice gnaw their food"
@@ -169,7 +169,7 @@ Therefore, there is a person in this class who cares about ocean pollution.
   1. $C(a) ∧ P(a)$      conjunction vi, vii
   1. $∃x(C(x) ∧ P(x))$  exist. gen. Conclusion
 
-- (c) ❎ “Each of the 93 students in this class owns a personal computer. Everyone who owns a personal computer can use a word processing program. Therefore, Zeke, a student in this class, can use a word processing program.”
+- (c) ✅ “Each of the 93 students in this class owns a personal computer. Everyone who owns a personal computer can use a word processing program. Therefore, Zeke, a student in this class, can use a word processing program.”
   1. $∀x(C(x) → P(x))$    Premise
   1. $C(a) → P(a)$        univ. inst i
   1. $∀x(P(x) → W(x))$    Premise
@@ -178,7 +178,7 @@ Therefore, there is a person in this class who cares about ocean pollution.
   1. $C(a)$               Premise
   1. $W(a)$               Conclusion mod. ponens
 
-- (d) ❎ “Everyone in New Jersey lives within 50 miles of the ocean. Someone in New Jersey has never seen the ocean. Therefore, someone who lives within 50 miles of the ocean has never seen the ocean.”
+- (d) ✅ “Everyone in New Jersey lives within 50 miles of the ocean. Someone in New Jersey has never seen the ocean. Therefore, someone who lives within 50 miles of the ocean has never seen the ocean.”
   1. $∀x(J(x) → F(x))$    Premise
   1. $J(a) → F(a)$        univ. inst. i
   1. $∃x(J(x) ∧ ¬S(x))$   Premise
@@ -215,13 +215,13 @@ Therefore, there is a person in this class who cares about ocean pollution.
   1. $w(m) ∧ c(m)$        simp. iv; conj. v
   1. $∃x(w(x) ∧ c(x))$    Conclusion; exist. gen.
 
-- (d) ❔ “There is someone in this class who has been to France. Everyone who goes to France visits the Louvre. Therefore, someone in this class has visited the Louvre.”
+- (d) ❕ “There is someone in this class who has been to France. Everyone who goes to France visits the Louvre. Therefore, someone in this class has visited the Louvre.”
   1. $∃x(c(x) ∧ f(x))$    Premise
   1. $∀x(f(x) → l(x))$    Premise
   1. $∃x(c(x) ∧ l(x))$    Premise
 
 15. For each of these arguments determine whether the argument is correct or incorrect and explain why.
-- (a) ❗All students in this class understand logic. Xavier is a student in this class. Therefore, Xavier understands logic.
+- (a) ❓All students in this class understand logic. Xavier is a student in this class. Therefore, Xavier understands logic.
 - (b) Every computer science major takes discrete mathematics. Natasha is taking discrete mathematics. Therefore, Natasha is a computer science major.
   - Incorrect, The second statement cannot be used to draw a conclusion from the universal instatntiation of the first one.
 - (c) All parrots like fruit. My pet bird is not a parrot. Therefore, my pet bird does not like fruit.
@@ -306,7 +306,7 @@ Therefore, there is a person in this class who cares about ocean pollution.
 25. ❌ Justify the rule of universal modus tollens by showing that the premises $∀x(P(x) → Q(x))$ and $¬Q(a)$ for a particular element a in the domain, imply $¬P(a)$.
     - **By using universal instantiation of the first statement and conjunction with the second we obtain $P(a) → Q(a)$ which allows us to use modus tollens to conclude $¬P(a)$.**
 
-26. ❎ Justify the rule of universal transitivity, which states that if $∀x(P(x) → Q(x))$ and $∀x(Q(x) → R(x))$ are true, then $∀x(P(x) → R(x))$ is true, where the domains of all quantifiers are the same.
+26. ✅ Justify the rule of universal transitivity, which states that if $∀x(P(x) → Q(x))$ and $∀x(Q(x) → R(x))$ are true, then $∀x(P(x) → R(x))$ is true, where the domains of all quantifiers are the same.
     - $∀x(P(x) → Q(x))$
     - $∀x(Q(x) → R(x))$
     - $∀x(P(x) → R(x))$ Conclusion
@@ -325,7 +325,7 @@ Therefore, there is a person in this class who cares about ocean pollution.
 28. ❌ Use rules of inference to show that if $∀x(P(x) ∨ Q(x))$ and $∀x((¬P(x) ∧ Q(x)) → R(x))$ are true, then $∀x(¬R(x) → P(x))$ is also true, where the domains of all quantifiers are the same.
     - We want to show that $¬R(a) → P(a)$. This can then be generalized. **Using equivalence on the instantiation of the second statement gives us $(P(a) ∨ ¬Q(a) ∨ R(a)) ∧ (P(a) ∨ Q(a))$ in conjunction with the second statement. Resolution on $Q(a)$ gives us $(P(a) ∨ R(a)) ∧ P(a)$ and simplificaion shows that $P(a)$ is true.**
 
-29. ❎ Use rules of inference to show that if $∀x(P(x) ∨ Q(x))$, $∀x(¬Q(x) ∨ S(x))$, $∀x(R(x) → ¬S(x))$, and $∃x¬P(x)$ are true, then $∃x¬R(x)$ is true.
+29. ✅ Use rules of inference to show that if $∀x(P(x) ∨ Q(x))$, $∀x(¬Q(x) ∨ S(x))$, $∀x(R(x) → ¬S(x))$, and $∃x¬P(x)$ are true, then $∃x¬R(x)$ is true.
     1. $∀x(¬Q(x) ∨ S(x))$     Premise
     1. $∀x(P(x) ∨ Q(x))$      Premise
     1. $P(a) ∨ S(a)$          univ. inst., resoltuion i,ii
@@ -370,14 +370,14 @@ Therefore, there is a person in this class who cares about ocean pollution.
     - $¬e ∨ ¬s$
 
 By translating these assumptions into statements involving propositional variables and logical connectives, determine whether each of the following are valid conclusions of these assumptions:
-- (a) ❎ That mathematics is not easy, if many students like logic.
+- (a) ✅ That mathematics is not easy, if many students like logic.
   - $¬e ∨ ¬s$ (equiv. + resolution)
   - $s → ¬e$.
   - This is true. Using equivalence on 2 and then resolution with 1 gives $¬e ∨ ¬s$. This in turn is equivalent to $s → ¬e$.
 - (b) That not many students like logic, if mathematics is not easy.
   - $¬e → ¬s$
   - ❌ True, this is the contrapositive of the hypothetical syllogism of the equivalences of 1 and 2.
-- (c) ❎ That mathematics is not easy or logic is difficult.
+- (c) ✅ That mathematics is not easy or logic is difficult.
   - $¬e ∨ d$
   - False, using equivalence on 2 and resolution on 1 and 2 it follows that both evaluate to $¬e ∨ ¬s$ and $d$ is excluded.
 - (d) That logic is not difficult or mathematics is not easy.
@@ -387,7 +387,7 @@ By translating these assumptions into statements involving propositional variabl
   - $¬s → ¬e ∨ ¬d$
   - This will only be false if s = F and both e and d are true. This renders 1 true and 2 false, ❌ **therefore the conclusion is invalid.**
 
-35. (∗) ❎ Determine whether this argument, taken from Kalish and Montague [KaMo64], is valid. If Superman were able and willing to prevent evil, he would do so. If Superman were unable to prevent evil, he would be impotent; if he were unwilling to prevent evil, he would be malevolent. Superman does not prevent evil. If Superman exists, he is neither impotent nor malevolent. Therefore, Superman does not exist.
+35. (∗) ✅ Determine whether this argument, taken from Kalish and Montague [KaMo64], is valid. If Superman were able and willing to prevent evil, he would do so. If Superman were unable to prevent evil, he would be impotent; if he were unwilling to prevent evil, he would be malevolent. Superman does not prevent evil. If Superman exists, he is neither impotent nor malevolent. Therefore, Superman does not exist.
     - $(a ∧ w) → p$     Premise (1)
     - $¬a → i$          Premise (2)
     - $¬w → m$          Premise (3)

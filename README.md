@@ -24,20 +24,17 @@ Chapter 1 (1 - 115)
 ⭕
 : Missing answer
 
-❗
-: Not Attempted (to see example solution)
-
 ❓
 : Not Attempted (too hard)
 
-❔
+❕
 : Not Attempted (too easy)
 
-🚫
-: Misinterpreted exercise
-
-❎
+✅
 : Correct (with a different possible solution)
 
-✅
+❎
 : Correct (from solutions guide)
+
+⚠️ / ⚠️ ... ⚠️
+: Unable to understand solution / part of solution
