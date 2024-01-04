@@ -18,23 +18,12 @@ Chapter 1 (1 - 115)
 
 ## Symbols
 
-❌
-: Wrong answer
-
-⭕
-: Missing answer
-
-❓
-: Not Attempted (too hard)
-
-❕
-: Not Attempted (too easy)
-
-✅
-: Correct (with a different possible solution)
-
-❎
-: Correct (from solutions guide)
-
-⚠️ / ⚠️ ... ⚠️
-: Unable to understand solution / part of solution
+|Symbol|Meaning|
+| :-: |-|
+|❌|Wrong answer|
+|⭕|Missing answer|
+|❓|Not Attempted (too hard)|
+|❕|Not Attempted (too easy)|
+|✅|Correct (with a different possible solution)|
+|❎|Correct (from solutions guide)|
+|⚠️ / ⚠️ ... ⚠️|Unable to understand solution / part of solution|

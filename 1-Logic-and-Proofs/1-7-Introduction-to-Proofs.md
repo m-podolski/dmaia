@@ -87,7 +87,7 @@
     - Contrapos.: If $x < 1 ∧ y < 1$ then $x + y < 2$
     - $x + y < 1 + 1$
 
-16. ✅ Prove that if m and n are integers and mn is even, then m is even or n is even.
+16. Prove that if m and n are integers and mn is even, then m is even or n is even.
     - $mn = 2a → m = 2b ∨ n = 2c$
     - $mn = 2a$
     - $m = 2\frac{a}{n} ∨ n = 2\frac{a}{m}$
