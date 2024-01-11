@@ -7,6 +7,8 @@ regex_patterns: dict[re.Pattern[str], str] = {
     re.compile(r"(?m)^(\∗{1,2}) ([\w\d]{1,2}[\.)])"): r"\2 (\1)",
     # remove leading, trailing and in-between whitespace from part-indexes
     re.compile(r"(?m)^\s?(\w) ?\) ?"): r"(\1) ",
+    # remove leading, trailing and in-between whitespace from part-indexes following an exercise-number
+    re.compile(r"(?m)^(\d+\.) ?(\w) ?\) ?"): r"\1 Parts:\n(\2) ",
     # join lines
     re.compile(r"(?m)[\r\n](?!^\(\w\)|\d{1,2}\. )"): r" ",
     # remove "- "-gaps
