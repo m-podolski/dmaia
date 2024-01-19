@@ -2,10 +2,10 @@
 
 ## History
 
-Pages 1 - 888
-
-Chapter 1 (1 - 115)
-  20.10.23 -
+|Chapter|Pages|From|To|
+| :-: |-|-|-|
+|All|888|20.10.23||
+|1|1-115|20.10.23|19.01.24|
 
 ## Chapters requiring calculus
 
@@ -24,6 +24,7 @@ Chapter 1 (1 - 115)
 |⭕|Missing answer|
 |❓|Not Attempted (too hard)|
 |❕|Not Attempted (too easy)|
+|❔|Not Attempted (skipped)|
 |✅|Correct (with a different possible solution)|
 |❎|Correct (from solutions guide)|
-|⚠️ / ⚠️ ... ⚠️|Unable to understand solution / part of solution|
+|⚠️ / ⚠️ ... ⚠️|Unable to understand / to understand part|

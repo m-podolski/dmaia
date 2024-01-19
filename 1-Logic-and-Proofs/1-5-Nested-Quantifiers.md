@@ -608,6 +608,6 @@ Now every proposition that involves no quantifiers is already in PNF (base case 
 Finally, suppose we have a disjunction, $P ∨ Q$, each of which can (by hypothesis) be assumed to be in PNF. There are several cases. If only one of P and Q has quantifiers, then we invoke the result of 46/1.4 to bring the quantifier in front of both. We then apply our process to what remains. For example, $P∨∀xQ(x)$ is equivalent to $∀x(P∨Q(x))$. Another case is that the proposition might look like $∃xR(x)∨∃xS(x)$. In this case, by 45/1.4, the proposition is equivalent to $∃x(R(x)∨S(x))$. Once again, by the inductive hypothesis we can then put $R(x)∨S(x)$ into PNF, so the entire proposition can be put into PNF. Similarly, using 48/1.5 we can transform $∀xR(x)∨∀xS(x)$ into the equivalent $∀x∀y(R(x)∨S(y))$; putting $R(x)∨S(y)$ into PNF then brings the entire proposition into PNF. Finally if the proposition is of the form $∀xR(x)∨∃xQ(y)$, then we invoke 49b/1.5 and apply the same construction.
 Note that this proof actually gives us the process for finding the proposition in PNF equivalent to the given proposition-we just work from the inside out, dealing with one logical operation or quantifier at a time. (See SSG for example)
 
-52. (∗) Express the quantification ∃!xP (x), introduced in Section 1.4, using universal quantifications, existential quantifications, and logical operators.
-    - ✅ $∃x∀y(x ≠ y ↔ P(x))$
+52. (∗) Express the quantification $∃!xP(x)$, introduced in Section 1.4, using universal quantifications, existential quantifications, and logical operators.
     - $∃x∀y(x = y ↔ P(x))$
+    - ❎ $∃x(P(x) ∧ ∀y(P(x) → y=x))$

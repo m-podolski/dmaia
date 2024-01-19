@@ -121,7 +121,7 @@
     - ❎ $k = (n-1)/2$; since n is odd, $n-1$ is even, so k is an integer.
 
 20. ❓ Prove that given a real number x there exist unique numbers n and e such that x = n + e, n is an integer, and 0 ≤ e < 1.
-    - ❎ Given x, let n be the greatest integer less that or equal to x, and let $e = x-n$. Clearly $0 ≤ e < 1$, and e is unique for this n. Any other choice wuld cause the required e to be less than 0 or greater than or equal to 1, so n is unique as well.
+    - ❎ Given x, let n be the greatest integer less that or equal to x, and let $e = x-n$. Clearly $0 ≤ e < 1$, and e is unique for this n. Any other choice would cause the required e to be less than 0 or greater than or equal to 1, so n is unique as well.
 
 21. Prove that given a real number x there exist unique numbers n and e such that $x = n − e$, n is an integer, and $0 ≤ e < 1$.
     - Let n be the smallest integer number greater than or equal to x. Then $0 ≤ e < 1$ and e is unique. Any other choice of n would make $0 ≤ e < 1$ false.
