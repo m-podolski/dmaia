@@ -32,3 +32,11 @@
 |❎|Correct (from solutions guide)|
 |✔|Additional Info (from solutions guide)|
 |⚠️ / ⚠️ ... ⚠️|Unable to understand / to understand part|
+
+## Abbreviations
+
+|Abbreviation|Meaning|
+| :-: |-|
+|bd.|By definition|
+|btdo.|By the definition of|
+|wlog.|Without loss of generality|

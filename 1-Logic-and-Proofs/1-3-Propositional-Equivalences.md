@@ -266,7 +266,8 @@ $$
     - then the 2nd part of the condition says that q would have to be true to render the conjunction true
     - however, q is negated in the conjunction, so it will always be false
 
-16. Show that p ↔ q and (p ∧ q) ∨ (¬p ∧ ¬q) are logically equivalent.
+16. ❓ Show that p ↔ q and (p ∧ q) ∨ (¬p ∧ ¬q) are logically equivalent.
+    - ❎ The first of these propositions is true if and only if p and q have the same truth value. The second is true if and only if either p and q are both true, or p and q are both false. Clearly these two conditions are saying the same thing.
 
 17. Show that ¬(p ↔ q) and p ↔ ¬q are logically equivalent.
     - ❌ The first biconditional will be true if p and q are false and false if they are true. The second implies that p and q have to have different values.
@@ -312,6 +313,7 @@ $$
 
 30. Show that (p ∨ q) ∧ (¬p ∨ r) → (q ∨ r) is a tautology
     - We will show that if p ∨ q and ¬p ∨ r are true, q ∨ r will be true. Because p is negated in one part of the antecedent one of p ∨ q and ¬p ∨ r will always be true. Therefore it is sufficient for either q or r to be true.
+    - ✔ The conclusion q ∨ r will be true in every case except when q and r are both false. But if q and r are both false, then one of p ∨ q or ¬p ∨ r is false, because one of p or ¬p is false. Thus in this case the hypothesis (p ∨ q) ∧ (¬p ∨ r) is false. An conditional statement in which the conclusion is true or the hypothesis is false is true, and that completes the argument.
 
 31. Show that (p → q) → r and p → (q → r) are not logically equivalent.
     - (¬p ∨ q) → r will be false only if r is false and either p is false or q is true or both. Applying this to p → (¬q ∨ r), shows that it is true if p is true, therefore they are not equivalent.
