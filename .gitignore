@@ -6,3 +6,5 @@
 *.pdf
 *.xdv
 __pycache__
+
+!book/*.pdf

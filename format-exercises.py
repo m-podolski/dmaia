@@ -15,6 +15,8 @@ regex_patterns: dict[re.Pattern[str], str] = {
     re.compile(r"(\w)- (\w)"): r"\1\2",
     # remove "P ("-gaps
     re.compile(r"(P) (\()"): r"\1\2",
+    # remove "f ("-gaps
+    re.compile(r"(f) (\()"): r"\1\2",
     # add line above intro
     re.compile(r"(?m)^([\d]{1,2}[\.)])"): r"\n\1",
     # add bullets to part-indexes
