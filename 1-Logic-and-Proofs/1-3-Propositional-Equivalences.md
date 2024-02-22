@@ -267,7 +267,7 @@ $$
     - however, q is negated in the conjunction, so it will always be false
 
 16. ❓ Show that p ↔ q and (p ∧ q) ∨ (¬p ∧ ¬q) are logically equivalent.
-    - ❎ The first of these propositions is true if and only if p and q have the same truth value. The second is true if and only if either p and q are both true, or p and q are both false. Clearly these two conditions are saying the same thing.
+    - ✅ The first of these propositions is true if and only if p and q have the same truth value. The second is true if and only if either p and q are both true, or p and q are both false. Clearly these two conditions are saying the same thing.
 
 17. Show that ¬(p ↔ q) and p ↔ ¬q are logically equivalent.
     - ❌ The first biconditional will be true if p and q are false and false if they are true. The second implies that p and q have to have different values.
@@ -366,6 +366,8 @@ A collection of logical operators is called **functionally complete** if every c
 
 45. (*) Show that ¬ and ∨ form a functionally complete collection of logical operators.
     - Similar to 44 we now apply De Morgans law to each proposition of the disjunctive normal form rather than to the whole. Therefore every p1 ∨ p2 ∨ ··· ∨ pn now only uses ¬ and ∨.
+
+The following exercises involve the logical operators **NAND** and **NOR**. The proposition p *NAND* q is true when either p or q, or both, are false; and it is false when both p and q are true. The proposition p *NOR* q is true when both p and q are false, and it is false otherwise. The propositions p *NAND* q and p *NOR* q are denoted by p | q and p ↓ q, respectively. (The operators | and ↓ are called the Sheffer stroke and the Peirce arrow after H. M. Sheffer and C. S. Peirce, respectively.)
 
 46. Construct a truth table for the logical operator NAND.
 $$

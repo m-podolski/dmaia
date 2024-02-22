@@ -31,7 +31,7 @@
     - Case $b ≥ a ≥ c$:
     - Case $c ≥ a ≥ b$:
     - Case $c ≥ b ≥ a$:
-    - ❎ 3 cases: a, b or c are smallest (or tied for smallest)
+    - ✅ 3 cases: a, b or c are smallest (or tied for smallest)
 
 5. Prove using the notion of without loss of generality that $min(x, y) = (x + y − |x − y|)/2$ and $max(x, y) = (x + y + |x − y|)/2$ whenever x and y are real numbers.
     - ❌ Case $x ≥ y$: $x − y ≥ 0, |x - y| = x - y$
@@ -40,7 +40,7 @@
       - $max(x, y) = x$
       - $(x + y + x - y)/2$
     - ❌ Case $x < y$: $x − y < 0, |x - y| = -(x - y)$
-    - ❎ Because $|x - y| = |y - x|$, the values of x and y are interchangeable. Therefore WLOG we can assume that $x ≥ y$ and $|x - y| = x - y$.
+    - ✅ Because $|x - y| = |y - x|$, the values of x and y are interchangeable. Therefore WLOG we can assume that $x ≥ y$ and $|x - y| = x - y$.
 
 6. Prove using the notion of without loss of generality that 5x + 5y is an odd integer when x and y are integers of opposite parity.
     - As ~~$5x + 5y$ is commutative and~~ x and y are of opposite parity, we assume WLOG that x is even and y is odd. This gives us $5(2a) + 5(2b + 1) = 10a + 10b + 1 = 2(5a + 5b) + 1$
@@ -49,7 +49,7 @@
     - (i) x and y both nonnegative, (ii) x nonnegative and y is negative, (iii) x negative and y nonnegative, and (iv) x negative and y negative.
     ❌ 1. $|x + y|$ is nonnegative, so $x + y ≥ x + y$
     ❌ 2. $|x + y|$ is , so $x - y ≥ x + y$
-    - ❎ (i), then $|x|+|y| = x+y = |x+y|$
+    - ✅ (i), then $|x|+|y| = x+y = |x+y|$
     - (iv), then $|x|+|y| = (-x)+(-y) = -(x+y) = |x+y|$ since x+y is negative.
     - (ii,iii) aussume WLOG that $x≥0$ and $y<0$ because of the commutativity of addition.
     - two subcases depending on the relative sizes of x and -y
@@ -58,16 +58,16 @@
 
 8. ❌ Prove that there is a positive integer that equals the sum of the positive integers not exceeding it. Is your proof constructive or nonconstructive?
     - $1 + 2 = 3$, constructive
-    - ❎ 1
+    - ✅ 1
 
 9. Prove that there are 100 consecutive positive integers that are not perfect squares. Is your proof constructive or nonconstructive?
     - ❌ nonconstructive
-    - ❎ by looking at large enough numbers such a sequence can be found, for example $100²=10000$ and $101²=10201$ so between them are 201 consecutive numbers of which the first 100 satisfy the exercise. The proof is constructive.
+    - ✅ by looking at large enough numbers such a sequence can be found, for example $100²=10000$ and $101²=10201$ so between them are 201 consecutive numbers of which the first 100 satisfy the exercise. The proof is constructive.
 
 10. Prove that either $2·10^{500} + 15$ or $2·10^{500} + 16$ is not a perfect square. Is your proof constructive or nonconstructive?
     - let $x=2·10^{500} + 15$, then $x+1=2·10^{500} + 16$
     - ❌ $(10^{250})^{2}=10^{500}$
-    - ❎ The only perfect squares that differ by 1 are 0 and 1. This is a nonconstructive proof (in fact neither is a perfect square).
+    - ✅ The only perfect squares that differ by 1 are 0 and 1. This is a nonconstructive proof (in fact neither is a perfect square).
 
 11. Prove that there exists a pair of consecutive integers such that one of these integers is a perfect square and the other is a perfect cube.
     - $n = x² ∧ (n+1 = y³ ∨ n-1 = y³)$.
@@ -77,25 +77,25 @@
 
 12. Show that the product of two of the numbers $65^{1000} − 8^{2001} + 3^{177}$ , $79^{1212} − 9^{2399} + 2^{2001}$ , and $24^{4493} − 5^{8192} + 7^{1777}$ is nonnegative. Is your proof constructive or nonconstructive? [Hint: Do not try to evaluate these numbers!]
     - For the product(s) of two arbitrarily chosen numbers to be nonnegative both have to have the same sign. ❌ So all numbers must be nonnegative or all must be negative.
-    - ❎ For any three numbers at least two must have the same sign, so for these the product will be nonnegative. This is a nonconstructive proof.
+    - ✅ For any three numbers at least two must have the same sign, so for these the product will be nonnegative. This is a nonconstructive proof.
 
 13. ❓ Prove or disprove that there is a rational number x and an irrational number y such that $x^y$ is irrational.
-    - ❎ let $x=2$ and $y=\sqrt{2}$. If $x^y=2^{\sqrt{2}}$ is irrational, we are done.
+    - ✅ let $x=2$ and $y=\sqrt{2}$. If $x^y=2^{\sqrt{2}}$ is irrational, we are done.
     - If not the let  $x=2^{\sqrt{2}}$ and  $y=\sqrt{2}/4$; x is rational by assumption and y is irrational (if it were rational, then $\sqrt{2}$ would be rational). But now $x² = (2^{\sqrt{2}})^{\sqrt{2}/4} = 2^{\sqrt{2}\sqrt{2}/4} = 2^{1/2} = \sqrt{2}$, which is irrational.
 
 14. Prove or disprove that if a and b are rational numbers, then $a^b$ is also rational.
     - if $a = \frac{m}{n}$ and $b = \frac{o}{p}$, then $a^b = \frac{q}{r}$
     - ❌ $\frac{m}{n}^\frac{o}{p} = \frac{q}{r}$
     - $\frac{m^\frac{o}{p}}{n^\frac{o}{p}}$
-    - ❎ disprove by counterexample: $a^b = 2^{1/2} = \sqrt{2}$
+    - ✅ disprove by counterexample: $a^b = 2^{1/2} = \sqrt{2}$
 
 15. Show that each of these statements can be used to express the fact that there is a unique element x such that P(x) is true. [Note that we can also write this statement as $∃!xP(x)$.]
 - (a) $∃x∀y(P(y) ↔ x = y)$
-  - ✅ This statement says that there exists an element x such that for all elements y if P is true then its element equals x; leaving open the possibility that P might not be true in some cases where x=y. This is ruled out by the converse implication that if x=y (is unique), then P will be true.
+  - ❎ This statement says that there exists an element x such that for all elements y if P is true then its element equals x; leaving open the possibility that P might not be true in some cases where x=y. This is ruled out by the converse implication that if x=y (is unique), then P will be true.
 - (b) $∃xP(x) ∧ ∀x∀y(P(x) ∧ P(y) → x = y)$
   - Here the first part of the conjunction states the existence and the second the uniqueness, where for all two elements (not necessarily dsitinct) from the domain P is only true for both, if the elements are the same.
 - (c) $∃x(P(x) ∧ ∀y(P(y) → x = y))$
-  - ✅ This follows the same principle as (b) in that we have a conjunction stating existence first and then uniqueness but existentially quantified as one expression. So the scope of ∃x extends into the second part and P(x) constrains it as needed.
+  - ❎ This follows the same principle as (b) in that we have a conjunction stating existence first and then uniqueness but existentially quantified as one expression. So the scope of ∃x extends into the second part and P(x) constrains it as needed.
 
 16. Show that if a, b, and c are real numbers and a ≠ 0, then there is a unique solution of the equation ax + b = c.
     - 1: A solution exists:
@@ -105,7 +105,7 @@
 
 17. Suppose that a and b are odd integers with a ≠ b. Show there is a unique integer c such that |a − c| = |b − c|.
     - ❌ $|(2k+1) − c| = |(2j+1) − c|$
-    - ❎ c exists/c is unique: $|a − c| = |b − c|$ is equivalent to $a − c = b − c ∨ a − c = -b + c$. The first of these is equivalent to $a=b$ which contradicts our assumptions, so the original equation is equivalent to $a − c = -b + c$, solving for c gives $c=(a+b)/2$. Thus there is a unique solution.
+    - ✅ c exists/c is unique: $|a − c| = |b − c|$ is equivalent to $a − c = b − c ∨ a − c = -b + c$. The first of these is equivalent to $a=b$ which contradicts our assumptions, so the original equation is equivalent to $a − c = -b + c$, solving for c gives $c=(a+b)/2$. Thus there is a unique solution.
     - c is an integer: the sum of the odd integers a and b is even.
 
 18. Show that if r is an irrational number, there is a unique integer n such that the distance between r and n is less than 1/2.
@@ -113,15 +113,15 @@
     - $\sqrt{(\sqrt{2}-n)²} < 1/2$
     - $(\sqrt{2}-n)² < (1/2)²$
     - $n +n² > (-1/4+2)/2\sqrt{2}$
-    - ❎ Let a be the closest integer to r less than r and b be the closest integer to r greater than r. Then $b = a+1$. Clearly the distance between r and any integer other than a or b is greater than 1. Furthermore, since r is irrational, it cannot be exactly halfway between a and b, so exactly one of $r-a < 1/2$ and $b-r < 1/2$ holds.
+    - ✅ Let a be the closest integer to r less than r and b be the closest integer to r greater than r. Then $b = a+1$. Clearly the distance between r and any integer other than a or b is greater than 1. Furthermore, since r is irrational, it cannot be exactly halfway between a and b, so exactly one of $r-a < 1/2$ and $b-r < 1/2$ holds.
 
 19. Show that if n is an odd integer, then there is a unique integer k such that n is the sum of k − 2 and k + 3.
     - $n = 2j+1$
     - ❌ $n = (k-2)+(k+3) = 2k+1$
-    - ❎ $k = (n-1)/2$; since n is odd, $n-1$ is even, so k is an integer.
+    - ✅ $k = (n-1)/2$; since n is odd, $n-1$ is even, so k is an integer.
 
 20. ❓ Prove that given a real number x there exist unique numbers n and e such that x = n + e, n is an integer, and 0 ≤ e < 1.
-    - ❎ Given x, let n be the greatest integer less that or equal to x, and let $e = x-n$. Clearly $0 ≤ e < 1$, and e is unique for this n. Any other choice would cause the required e to be less than 0 or greater than or equal to 1, so n is unique as well.
+    - ✅ Given x, let n be the greatest integer less that or equal to x, and let $e = x-n$. Clearly $0 ≤ e < 1$, and e is unique for this n. Any other choice would cause the required e to be less than 0 or greater than or equal to 1, so n is unique as well.
 
 21. Prove that given a real number x there exist unique numbers n and e such that $x = n − e$, n is an integer, and $0 ≤ e < 1$.
     - Let n be the smallest integer number greater than or equal to x. Then $0 ≤ e < 1$ and e is unique. Any other choice of n would make $0 ≤ e < 1$ false.
@@ -153,7 +153,7 @@ x & y & 2xy/(x + y) & \sqrt[2]{xy} & HM & GM & HM/GM\\
 \end{array}
 $$
 - ❌ Conjecture: The ratio of the harmonic mean over the geometric mean r is $0 < r ≤ 1$ and it is the same for all x and y where $o = x/y$ is the same. Additionally it decreases when $xy$ increases.
-- ❎ Conjecture: HM of x and y is always less than GM if x and y are distinct positive real numbers. So we want to verify the inequality $2xy/(x + y) < \sqrt{xy}$. Multiplying both sides by $(x+y)/(2\sqrt{xy})$ gives us the equivalent inequality $\sqrt{xy} < (x + y)/2$, which is proved in example 14.
+- ✅ Conjecture: HM of x and y is always less than GM if x and y are distinct positive real numbers. So we want to verify the inequality $2xy/(x + y) < \sqrt{xy}$. Multiplying both sides by $(x+y)/(2\sqrt{xy})$ gives us the equivalent inequality $\sqrt{xy} < (x + y)/2$, which is proved in example 14.
 
 24. The **quadratic  mean**  mean of two real numbers x and y equals $(x^2 + y^2 )/2$. By computing the arithmetic and quadratic means of different pairs of positive real numbers, formulate a conjecture about their relative sizes and prove your conjecture.
     - $\sqrt{(x^2 + y^2 )/2}$
@@ -165,7 +165,7 @@ $$
       - 2,3: $5/2 ≈ 2.5$
       - 3,4: $7/2 ≈ 3.5$
     - Conjecture: $\sqrt{(x^2 + y^2 )/2} ❌ > (x + y)/2$
-    - Conjecture: $\sqrt{(x^2 + y^2 )/2} ❎ ≥ (x + y)/2$
+    - Conjecture: $\sqrt{(x^2 + y^2 )/2} ✅ ≥ (x + y)/2$
     - $\sqrt{(x^2 + y^2 )/2} > (x + y)/2$ | square
     - $(x^2 + y^2 )/2 > (x + y)²/4$ | *4
     - $2(x^2 + y^2 ) > (x + y)²$ | -(x + y)²
@@ -176,7 +176,7 @@ $$
 
 25. (∗) Write the numbers 1, 2, . . . , 2n on a blackboard, where n is an odd integer. Pick any two of the numbers, j and k, write |j − k| on the board and erase j and k. Continue this process until only one integer is written on the board. Prove that this integer must be odd.
     - ❌ (did not add the absolute value to the original list)
-    - ❎ The key point here is that the parity of the sum of the numbers written on the board never changes. If j and k are both even or both odd, then their sum and their difference are both even and we are replacing the even sum $j+k$ by the even difference $|j-k|$, leaving the parity of the total unchanged. If j and k have different parities, then erasing them changes the parity of the total, but hteir difference $|j-k|$ is odd, so adding this difference restores the parity of the total. Therefore the integer we end up with at the end of the process must have the same parity as $1+2+...+2n$. It is easy to compute this sum. If we add the first and last terms we get $2n+1$; if we add the second and next-to-last terms we get $2+(2n-1) = 2n+1$; and so on. In all we get n sums of 2n+1, so th total sum is $n(2n+1)$. If n is odd, this is the product of two odd numbers and therefore odd, as desired.
+    - ✅ The key point here is that the parity of the sum of the numbers written on the board never changes. If j and k are both even or both odd, then their sum and their difference are both even and we are replacing the even sum $j+k$ by the even difference $|j-k|$, leaving the parity of the total unchanged. If j and k have different parities, then erasing them changes the parity of the total, but hteir difference $|j-k|$ is odd, so adding this difference restores the parity of the total. Therefore the integer we end up with at the end of the process must have the same parity as $1+2+...+2n$. It is easy to compute this sum. If we add the first and last terms we get $2n+1$; if we add the second and next-to-last terms we get $2+(2n-1) = 2n+1$; and so on. In all we get n sums of 2n+1, so th total sum is $n(2n+1)$. If n is odd, this is the product of two odd numbers and therefore odd, as desired.
 
 26. (∗) Suppose that five ones and four zeros are arranged around a circle. Between any two equal bits you insert a 0 and between any two unequal bits you insert a 1 to produce nine new bits. Then you erase the nine original bits. Show that when you iterate this procedure, you can never get nine zeros. [Hint: Work backward, assuming that you did end up with nine zeros.]
     - Assuming that the result is a circle with only zeros, it is obvious that its predecessor must have consisted of only equal pairs of bits.(*) But because we have two distinct values there will be at least two unequal pairs (when all 1s are stringed together and all 0s are stringed together) where the strings are connected.
@@ -199,7 +199,7 @@ $$
     ❌
     1. final digit of $n = 2k = 0 ∨ 6$
     1. final digit of $n = 2k+1 = 5 ∨ 1$
-    - ❎ Because $(10a + b)⁴$ where $b=0..9$ yields the above numbers as values of b⁴ (the last part of the resulting polynomial, where the other parts are divisible by 10 and therefore irrelevant to the argument), the ones digits are always 0,1,5 or 6.
+    - ✅ Because $(10a + b)⁴$ where $b=0..9$ yields the above numbers as values of b⁴ (the last part of the resulting polynomial, where the other parts are divisible by 10 and therefore irrelevant to the argument), the ones digits are always 0,1,5 or 6.
 
 28. Formulate a conjecture about the final two decimal digits of the square of an integer. Prove your conjecture using a proof by cases.
     - ❌
@@ -213,7 +213,7 @@ $$
     - $17^2 = 289$
     - $18^2 = 324$
     - $19^2 = 361$
-    - ❎ Clearly only the last two digits of n contribute to the last two digits of n². so we can compute 0²,1²,...,99². We obtain  00 , 01 , 04 , 09 , 16 , 25 , 36 , 49 , 64, 81 , 21, 44, 69, 96, 56, 89, 24, 61, 41 , 84, 29, 76. From that point on, the list repeats in reverse order (as we take the squares from 25² to 49², and then it repeats again as we take the squares from 50² to 99²). The reason for these last two statements are that $(50-n)² = 2500-100n+n²$, so $(50-n)²$ and n² have the same two final digits, and $(50+n)² = 2500+100n+n²$, so $(50+n)²$ and n² have the same two final digits. Thus our list (which contains 22 numbers) is complete.
+    - ✅ Clearly only the last two digits of n contribute to the last two digits of n². so we can compute 0²,1²,...,99². We obtain  00 , 01 , 04 , 09 , 16 , 25 , 36 , 49 , 64, 81 , 21, 44, 69, 96, 56, 89, 24, 61, 41 , 84, 29, 76. From that point on, the list repeats in reverse order (as we take the squares from 25² to 49², and then it repeats again as we take the squares from 50² to 99²). The reason for these last two statements are that $(50-n)² = 2500-100n+n²$, so $(50-n)²$ and n² have the same two final digits, and $(50+n)² = 2500+100n+n²$, so $(50+n)²$ and n² have the same two final digits. Thus our list (which contains 22 numbers) is complete.
 
 29. Prove that there is no positive integer n such that $n^2 + n^3 = 100$.
     - A result x ≤ 100 is impossible if one summand is > 100, so the only possible cases are 1..4 as 5³ = 125. The closest of which is n = 4 and its result is 80.
@@ -226,7 +226,7 @@ $$
     - $x = \sqrt{(14 - 5y²)/2}$
     - solve for y:
     - $y = \sqrt{(14 - 2x²)/5}$
-    - ❎  If $|y| ≥ 2$, then $2x² + 5y² ≥ 2x² + 20 ≥ 20$, so the only possible values of y to try are 0 and ±1 . In the former case we would be looking for solutions to $2x² = 14$ and in the latter case to $2x² = 9$. Clearly there are no integer solutions to these equations, so there are no solutions to the original equation.
+    - ✅  If $|y| ≥ 2$, then $2x² + 5y² ≥ 2x² + 20 ≥ 20$, so the only possible values of y to try are 0 and ±1 . In the former case we would be looking for solutions to $2x² = 14$ and in the latter case to $2x² = 9$. Clearly there are no integer solutions to these equations, so there are no solutions to the original equation.
 
 31. Prove that there are no solutions in positive integers x and y to the equation $x^4 + y^4 = 625$.
     - Because $5^4 = 625$, y must be ≤ 4 and no sum of 1,2,3 and 4 is equal to 625.
@@ -257,18 +257,18 @@ $$
 
 36. Prove that between every rational number and every irrational number there is an irrational number.
     - ❌ Considering the numbers $\frac{a}{b} < \frac{a + 1/c\sqrt{2}}{b}$ where the first one is rational and the second one irrational because if $x = \frac{a + 1/c\sqrt{2}}{b}$ were rational then $c(xb-a) = \sqrt{2}$ would be, too. As c can be any integer there is an irrational number between any rational and irrational number.
-    - ❎ The average of a rational number x and an irrational number y must be irrational, because the equation $a = (x+y)/2$ leads to $y = 2a-x$, which would be rational if a were rational.
+    - ✅ The average of a rational number x and an irrational number y must be irrational, because the equation $a = (x+y)/2$ leads to $y = 2a-x$, which would be rational if a were rational.
 
 37. (∗) Let S = $x_1y_1 + x_2y_2 + · · · + x_ny_n$, where $x1, x2 , . . . , xn$ and $y1 , y2 , . . . , yn$ are orderings of two different sequences of positive real numbers, each containing n elements.
 - (a) ❓ Show that S takes its maximum value over all orderings of the two sequences when both sequences are sorted (so that the elements in each sequence are in nondecreasing order).
-  - ❎ WLOG, we may assume that the x sequence is already sorted, since we can relabel indices. There are only a finite number of possible orderings for the y sequence, so if we can show that we increase the sum (or at least keep it the same) whenever we find $y_i$ and $y_j$ that are out of order (i.e. $i<j$ but $y_i>y_j$) by switching them, then we will have shown that the sum is largest when the y sequence is in nondecreasing order. Indeed, if we perform the swap, then we have added $x_iy_j+x_jy_i$ to the sum and subtracted $x_iy_i+x_jy_j$. The net effect, then, is to have added $x_iy_j+x_jy_i - x_iy_i-x_jy_j = (x_j-x_i)(y_i-y_j)$, which is nonnegative by our ordering assumptions.
+  - ✅ WLOG, we may assume that the x sequence is already sorted, since we can relabel indices. There are only a finite number of possible orderings for the y sequence, so if we can show that we increase the sum (or at least keep it the same) whenever we find $y_i$ and $y_j$ that are out of order (i.e. $i<j$ but $y_i>y_j$) by switching them, then we will have shown that the sum is largest when the y sequence is in nondecreasing order. Indeed, if we perform the swap, then we have added $x_iy_j+x_jy_i$ to the sum and subtracted $x_iy_i+x_jy_j$. The net effect, then, is to have added $x_iy_j+x_jy_i - x_iy_i-x_jy_j = (x_j-x_i)(y_i-y_j)$, which is nonnegative by our ordering assumptions.
 - (b) Show that S takes its minimum value over all orderings of the two sequences when one sequence is sorted into nondecreasing order and the other is sorted into nonincreasing order.
   - Again assuming the x sequence is sorted, if we can show that we decrease the sum whenever we find $y_i$ and $y_j$ so that $i<j$ but $y_i<y_j$ by switching them, then the proof is complete. If we perform the swap we have $x_iy_j+x_jy_i - x_iy_i-x_jy_j = (x_j-x_i)(y_i-y_j)$, which is nonpositive by our ordering assumptions.
 
 38. Prove or disprove that if you have an 8-gallon jug of water and two empty jugs with capacities of 5 gallons and 3 gallons, respectively, then you can measure 4 gallons by successively pouring some of or all of the water in a jug into another jug.
     - $4 = 2(5-3)$
     - ❌ Not possible: (8,0,0), (3,5,0), (3,2,3), (6,2,0). So now the measured 2gal cannot be stored outside of the needed 5 and 3gal jugs.
-    - ❎ (8,0,0), (3,5,0), (3,2,3), (6,2,0), (6,0,2), (1,5,2), (1,4,3)
+    - ✅ (8,0,0), (3,5,0), (3,2,3), (6,2,0), (6,0,2), (1,5,2), (1,4,3)
 
 39. Verify the 3x + 1 conjecture for these integers.
 - (a) $6 → 3 → 10 → 5 → 16 → 8 → 4 → 2 → 1$
@@ -292,13 +292,13 @@ $$
     - As every domino covers an even number of squares and every recangular grid with an even number of squares must have at least one side with an even number of squares any of those boards can be tiled by aligning the dominoes with their longer side to the even sides of the rectangle.
 
 44. Prove or disprove that you can use dominoes to tile a 5 × 5 checkerboard with three corners removed.
-    - ✅ A board with both sides odd will always have the same colour in all corners. Therefore we assume WLOG that the rsulting board has 10 black and 12 white squares (3 black ones being removed), so a tiling with dominoes covering two adjacent squares is impossible.
+    - ❎ A board with both sides odd will always have the same colour in all corners. Therefore we assume WLOG that the rsulting board has 10 black and 12 white squares (3 black ones being removed), so a tiling with dominoes covering two adjacent squares is impossible.
 
 45. Use a proof by exhaustion to show that a tiling using dominoes of a 4 × 4 checkerboard with opposite corners removed does not exist. [Hint: First show that you can assume that the squares in the upper left and lower right corners are removed. Number the squares of the original checkerboard from 1 to 16, starting in the first row, moving right in this row, then starting in the leftmost square in the second row and moving right, and so on. Remove squares 1 and 16. To begin the proof, note that square 2 is covered either by a domino laid horizontally, which covers squares 2 and 3, or vertically, which covers squares 2 and 6. Consider each of these cases separately, and work through all the subcases that arise.]
     - WLOG we can assume that when two opposite corners are removed these can be considered the upper left and lower right while the entire board is numbered from 1 to 16 in reading-direction.
     - Considering the fact that the domino at 2 must either also cover 3 or 6 we construct a tiling starting with these cases, looking for a contradiction.
-    - ✅ (1) 2-3, 4-5, 11-12, 14-15, 9-13, 6-10: 5 and 7 cannot be tiled.
-    - ✅ (2) 2-6, 5-9, 13-14, 11-15: 10 cannot be tiled
+    - ❎ (1) 2-3, 4-5, 11-12, 14-15, 9-13, 6-10: 5 and 7 cannot be tiled.
+    - ❎ (2) 2-6, 5-9, 13-14, 11-15: 10 cannot be tiled
 
 46. (*) Prove that when a white square and a black square are removed from an 8 × 8 checkerboard (colored as in the text) you can tile the remaining squares of the checkerboard using dominoes. [Hint: Show that when one black and one white square are removed, each part of the partition of the remaining cells formed by inserting the barriers shown in the figure can be covered by dominoes.]
     - Considering the structure given in the figure,a tiling can be made that covers the entire board in a continuous path of dominoes connected by their shorter sides.
@@ -309,7 +309,7 @@ $$
 
 48. (∗) Find all squares, if they exist, on an 8 × 8 checkerboard such that the board obtained by removing one of these square can be tiled using straight triominoes. [Hint: First use arguments based on coloring and rotations to eliminate as many squares as possible from consideration.]
     - ❌ We assume a checkerboard with three colours. The result is 22 squares of colour a and 21 of b and c (which could be exchanged by rotation). So to make a tiling possible one of the white squares (a) would have to be removed to allow for a tiling with 21 triominoes.
-    - ❎ If we study Figure 7, we see that by rotating or reflecting the board, we can make any square nonwhite, with the exception of the squares with coordinates (3,3), (3,6), (6,3), (6,6). Therefore the same argument as was used in Example 22 shows that we cannot tile the board using straight triominoes if any one of those other 60 squares is removed.
+    - ✅ If we study Figure 7, we see that by rotating or reflecting the board, we can make any square nonwhite, with the exception of the squares with coordinates (3,3), (3,6), (6,3), (6,6). Therefore the same argument as was used in Example 22 shows that we cannot tile the board using straight triominoes if any one of those other 60 squares is removed.
     - A tiling with one of those four removed is however possible (see solutions guide).
 
 49. (∗)
@@ -323,4 +323,4 @@ $$
 
 50. (∗) Prove or disprove that you can tile a 10 × 10 checkerboard using straight tetrominoes.
     - ❌ Assuming a checkerboard coloured in alternating fashion similar to Figure 7 with four colours the resulting board has 26 squares of colour a, 25 of b, 24 of c and 25 of d. A straight tetrominoe would have to cover one of each colour in any position, so we would need the same number of squares in each colour which is not the case.
-    - ❎ Assume that 25 straight tetrominoes can cover the board. Some will be placed horizontally and some vertically. Because there is an odd number of tiles, the number placed horizontally and the number placed vertically cannot both be odd, so assume WLOG that an even number of tiles are placed horizontally. Color the squares in order using four colours in a certain order repeatedly, starting in the upper left corner and proceeding in reading direction. Then it is clear that every horizontally placed tile cover one square of each colour and every vertically placed one cover 0 or 2 squares of each colour. It follows that in this tiling an even number of squares of each colour are covered. But this contradicts the fact that there are 25 squares of each colour. Therefore no such colouring exists.
+    - ✅ Assume that 25 straight tetrominoes can cover the board. Some will be placed horizontally and some vertically. Because there is an odd number of tiles, the number placed horizontally and the number placed vertically cannot both be odd, so assume WLOG that an even number of tiles are placed horizontally. Color the squares in order using four colours in a certain order repeatedly, starting in the upper left corner and proceeding in reading direction. Then it is clear that every horizontally placed tile cover one square of each colour and every vertically placed one cover 0 or 2 squares of each colour. It follows that in this tiling an even number of squares of each colour are covered. But this contradicts the fact that there are 25 squares of each colour. Therefore no such colouring exists.

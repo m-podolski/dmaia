@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MarkdownSettings">
+    <option name="customStylesheetText" value="body {&#10;  font-family: &quot;Fira Sans&quot;, sans-serif;&#10;  overflow-wrap: break-word;&#10;  font-variant-numeric: tabular-nums;&#10;}&#10;code {&#10;  font-family: &quot;Fira Code&quot;, monospace;&#10;}" />
+    <option name="useCustomStylesheetText" value="true" />
+  </component>
+</project>

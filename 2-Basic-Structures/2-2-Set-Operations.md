@@ -40,7 +40,7 @@ In Exercises 5–10 assume that A is a subset of some underlying universal set U
 
 5. Prove the complementation law in Table 1 by showing that $\overline{(\overline{A})} = A$.
    - ❌ As $\overline{A} = U - A$, $\overline{(\overline{A})} = U - (U - A) = A$.
-   - ❎ $\overline{\overline{A}} = \{x|¬x∈\overline{A}\} = \{x|¬¬x∈\overline{A}\} = \{x|x∈\overline{A}\}$
+   - ✅ $\overline{\overline{A}} = \{x|¬x∈\overline{A}\} = \{x|¬¬x∈\overline{A}\} = \{x|x∈\overline{A}\}$
 
 6. Prove the identity laws in Table 1 by showing that
 - (a) $A ∪ ∅ = A$.
@@ -64,9 +64,9 @@ In Exercises 5–10 assume that A is a subset of some underlying universal set U
 
 9. Prove the complement laws in Table 1 by showing that
 - (a) $A ∪ \overline{A} = U$.
-  - ✅ $A ∪ \overline{A} = \{x ∈ U|x ∈ A ∨ x ∉ A\} = U$
+  - ❎ $A ∪ \overline{A} = \{x ∈ U|x ∈ A ∨ x ∉ A\} = U$
 - (b) $A ∩ \overline{A} = ∅$.
-  - ✅ $A ∩ \overline{A} = \{x ∈ U|x ∈ A ∧ x ∉ A\} = \{x|F\} = ∅$
+  - ❎ $A ∩ \overline{A} = \{x ∈ U|x ∈ A ∧ x ∉ A\} = \{x|F\} = ∅$
 
 10. Show that
 - (a) $A − ∅ = A$.
@@ -82,7 +82,7 @@ In Exercises 5–10 assume that A is a subset of some underlying universal set U
 
 12. Prove the first absorption law from Table 1 by showing that if A and B are sets, then A ∪ (A ∩ B) = A.
     - ✔ Prove equality by showing both sides are subsets of each other.
-    - ✅ $A ∪ (A ∩ B) = \{x|x ∈ A ∨ (x ∈ A ∧ x ∈ B)\}$ so $x ∈ A$.
+    - ❎ $A ∪ (A ∩ B) = \{x|x ∈ A ∨ (x ∈ A ∧ x ∈ B)\}$ so $x ∈ A$.
     - ⭕ Conversely, let x ∈ A. Then by the definition of union, x ∈ A ∪ (A ∩ B) as well. Thus we have shown that the right-hand side is a subset of the left-hand side.
 
 13. Prove the second absorption law from Table 1 by showing that if A and B are sets, then A ∩ (A ∪ B) = A.
@@ -123,18 +123,18 @@ In Exercises 5–10 assume that A is a subset of some underlying universal set U
 17. Show that if A, B, and C are sets, then $\overline{A ∩ B ∩ C} = \overline{A} ∪ \overline{B} ∪ \overline{C}$
 - (a) by showing each side is a subset of the other side.
   - If $x ∈ \overline{A ∩ B ∩ C}$ then $x ∉ A ∩ B ∩ C$. By De Morgans law this is equal to $x ∉ A ∨ x ∉ B ∨ x ∉ C$ which is $\overline{A} ∪ \overline{B} ∪ \overline{C}$ btdo. union.
-  - If $x ∈ \overline{A} ∪ \overline{B} ∪ \overline{C}$ then $x ∉ A ∨ x ∉ B ∨ x ∉ C$ ✅ which is $¬(x ∈ A ∧ x ∈ B ∧ x ∈ C)$ according to De Morgans law, so $\overline{A ∩ B ∩ C}$ btdo. union and complement.
+  - If $x ∈ \overline{A} ∪ \overline{B} ∪ \overline{C}$ then $x ∉ A ∨ x ∉ B ∨ x ∉ C$ ❎ which is $¬(x ∈ A ∧ x ∈ B ∧ x ∈ C)$ according to De Morgans law, so $\overline{A ∩ B ∩ C}$ btdo. union and complement.
 - (b) ❕ using a membership table.
 
 18. Let A, B, and C be sets. Show that
 - (a) $(A ∪ B) ⊆ (A ∪ B ∪ C)$.
   - ❌ If $x ∈ A ∪ B ∪ C$ then $x ∈ A ∪ B$ or $x ∈ C$.
-  - ❎  Suppose that $x ∈ A ∪ B$. Then either $x ∈ A$ or $x ∈ B$. In either case, certainly $x ∈ A ∪ B ∪ C$. This establishes the desired inclusion.
+  - ✅  Suppose that $x ∈ A ∪ B$. Then either $x ∈ A$ or $x ∈ B$. In either case, certainly $x ∈ A ∪ B ∪ C$. This establishes the desired inclusion.
 - (b) $(A ∩ B ∩ C) ⊆ (A ∩ B)$.
   - If $x ∈ A ∩ B ∩ C$ then $x ∈ A ∩ B$ and $x ∈ C$.
 - (c) $(A − B) − C ⊆ A − C$.
-  - ✅ As $A − B$ must be a subset of $A$, $(A − B) − C$ must be a subset of $A − C$.
-  - ❎ Suppose that $x ∈ (A − B) − C$. Then x is in $A − B$ but not in $C$. Since $x ∈ A − B$, we know that $x ∈ A$. Since we have established that $x ∈ A$ but $x ∉ C$ , we have proved that $x ∈ A − C$.
+  - ❎ As $A − B$ must be a subset of $A$, $(A − B) − C$ must be a subset of $A − C$.
+  - ✅ Suppose that $x ∈ (A − B) − C$. Then x is in $A − B$ but not in $C$. Since $x ∈ A − B$, we know that $x ∈ A$. Since we have established that $x ∈ A$ but $x ∉ C$ , we have proved that $x ∈ A − C$.
 - (d) $(A − C) ∩ (C − B) = ∅$.
   - If $x ∈ A − C$ then $x ∈ A$ but $x ∉ C$. If $x ∈ C - B$ then it must be in $C$. But now for the left side to be true $x ∉ C ∧ x ∈ C$ must hold, which is a contradiction.
 - (e) $(B − A) ∪ (C − A) = (B ∪ C) − A$.
@@ -143,40 +143,40 @@ In Exercises 5–10 assume that A is a subset of some underlying universal set U
 
 19. Show that if A and B are sets, then
 - (a) $A − B = A ∩ \overline{B}$.
-  - ✅ If $x ∈ A − B$ then $x ∈ A$ and $x ∉ B$. The latter is equivalent to $x ∈ \overline{B}$, so $x ∈ A ∩ \overline{B}$
-  - ✅ If $x ∈ A ∩ \overline{B}$ then $x ∈ A$ and $x ∉ B$ which is $A − B$ btdo. difference.
-  - ❎ This is clear, since both of these sets are precisely $\{x|x ∈ A ∧ x ∉ B\}$
+  - ❎ If $x ∈ A − B$ then $x ∈ A$ and $x ∉ B$. The latter is equivalent to $x ∈ \overline{B}$, so $x ∈ A ∩ \overline{B}$
+  - ❎ If $x ∈ A ∩ \overline{B}$ then $x ∈ A$ and $x ∉ B$ which is $A − B$ btdo. difference.
+  - ✅ This is clear, since both of these sets are precisely $\{x|x ∈ A ∧ x ∉ B\}$
 - (b) $(A ∩ B) ∪ (A ∩ \overline{B}) = A$.
   - If $x ∈ A ∩ B$ or $x ∈ A ∩ \overline{B}$ then $x ∈ A$ in both cases. ~~In the first $x ∈ A ∧ x ∈ B$, in the second $x ∈ A ∧ x ∉ B$, as both of these are complementary the set is equal to $A$.~~
   - ❌ If $x ∈ A$ we can assume a set $B$ and define a union of the intersection and intersection of the complement with $A$ by the logic stated above.
-  - ❎ If $x ∈ A$, there are two cases: $x ∈ B$ and $x ∉ B$. In the former case, $x$ is an element of $A ∩ B$ and therefore also an element of $(A ∩ B) ∪ (A ∩ \overline{B})$. In the latter case, $x ∈ \overline{B}$ and therefore $x$ is an element of $A ∩ \overline{B}$ and therefore also an element of $(A ∩ B) ∪ (A ∩ \overline{B})$.
+  - ✅ If $x ∈ A$, there are two cases: $x ∈ B$ and $x ∉ B$. In the former case, $x$ is an element of $A ∩ B$ and therefore also an element of $(A ∩ B) ∪ (A ∩ \overline{B})$. In the latter case, $x ∈ \overline{B}$ and therefore $x$ is an element of $A ∩ \overline{B}$ and therefore also an element of $(A ∩ B) ∪ (A ∩ \overline{B})$.
 
 20. Show that if A and B are sets with $A ⊆ B$, then
 - (a) $A ∪ B = B$.
   - ❌ As we know any $x ∈ A$ is also in B btdo. of subset, there can be no element in the union that is not in B.
-  - ❎ It is always the case that $B ⊆ A ∪ B$, so it remains to show that $A ∪ B ⊆ B$. But this is clear because if $x ∈ A ∪ B$, then either $x ∈ A$, in which case $x ∈ B$ (because we are given $A ⊆ B$ ) or $x ∈ B$; in either case $x ∈ B$.
+  - ✅ It is always the case that $B ⊆ A ∪ B$, so it remains to show that $A ∪ B ⊆ B$. But this is clear because if $x ∈ A ∪ B$, then either $x ∈ A$, in which case $x ∈ B$ (because we are given $A ⊆ B$ ) or $x ∈ B$; in either case $x ∈ B$.
 - (b) $A ∩ B = A$.
   - $A ∩ B$ is always a subset of $A$ bd.. ❌ If on the other hand $x ∈ A ∩ B$ then $x$ will be in $A$ and $B$. As we are given $A ⊆ B$ we know that there is no $x ∈ A$ not within $B$, so $A$ is a subset.
-  - ❎ It it remains to show that $A ⊆ A ∩ B$. But this is clear because if $x ∈ A$, then $x ∈ B$ as well (because we are given $A ⊆ B$ ), so $x ∈ A ∩ B$.
+  - ✅ It it remains to show that $A ⊆ A ∩ B$. But this is clear because if $x ∈ A$, then $x ∈ B$ as well (because we are given $A ⊆ B$ ), so $x ∈ A ∩ B$.
 
 21. Prove the first associative law from Table 1 by showing that if A, B, and C are sets, then $A ∪ (B ∪ C) = (A ∪ B) ∪ C$.
     - If $x ∈ A ∪ (B ∪ C)$ then $x$ can be in $A$ or $B ∪ C$.
     - ❌ If it is in $B$, we have $A ∪ B$. For the case that it is in $C$ we construct the union $(A ∪ B) ∪ C$.
-    - ❎ In the former case we can conclude that $x ∈ A ∪ B$ and thus $x ∈ (A ∪ B) ∪ C$, btdo. union. In the latter case, $x$ must be in $B$ or $C$. In the former subcase, we can conclude that $x ∈ (A ∪ B) ∪ C$, again using the definition of union.
+    - ✅ In the former case we can conclude that $x ∈ A ∪ B$ and thus $x ∈ (A ∪ B) ∪ C$, btdo. union. In the latter case, $x$ must be in $B$ or $C$. In the former subcase, we can conclude that $x ∈ (A ∪ B) ∪ C$, again using the definition of union.
     - If $x ∈ (A ∪ B) ∪ C$.
     - ⭕ The argument in the other direction is practically identical, with the roles of $A$, $B$ and $C$ switched around.
 
 22. Prove the second associative law from Table 1 by showing that if A, B, and C are sets, then $A ∩ (B ∩ C) = (A ∩ B) ∩ C$.
     - If $x ∈ A ∩ (B ∩ C)$ then $x$ will be in $A$, ❌ thus also in $A ∩ B$. $x$ will also be in $B ∩ C$ and therefore in $C$. So btdo. intersection we have $x ∈ (A ∩ B) ∩ C$.
-    - ❎ If $x ∈ A ∩ (B ∩ C)$ then $x$ will be in $A$ and in $B$ and in $C$. Since x is in both $A$ and $B$, we conclude that $x ∈ A ∩ B$. This togeteher with the fact that $x ∈ C$ tells us that $x ∈ (A ∩ B) ∩ C$, as desired.
+    - ✅ If $x ∈ A ∩ (B ∩ C)$ then $x$ will be in $A$ and in $B$ and in $C$. Since x is in both $A$ and $B$, we conclude that $x ∈ A ∩ B$. This togeteher with the fact that $x ∈ C$ tells us that $x ∈ (A ∩ B) ∩ C$, as desired.
     - The reverse argument is again very similar.
 
 23. Prove the first distributive law from Table 1 by showing that if A, B, and C are sets, then $A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)$.
-    - ✅ If $x ∈ A ∪ (B ∩ C)$ then either $x ∈ A$ or $x ∈ B ∩ C$. If it is in $A$ then it will also be in $A ∪ B$ as well as in $A ∪ C$. If $x ∈ B$ and $x ∈ C$, the same is true. Btdo. intersection we have $x ∈ (A ∪ B) ∩ (A ∪ C)$.
-    - ✅ If $x ∈ (A ∪ B) ∩ (A ∪ C)$ then it is in $A ∪ B$ and $A ∪ C$. If it is in $A$ then it is in $A ∪ (B ∩ C)$. If it is in $B$ or $C$
+    - ❎ If $x ∈ A ∪ (B ∩ C)$ then either $x ∈ A$ or $x ∈ B ∩ C$. If it is in $A$ then it will also be in $A ∪ B$ as well as in $A ∪ C$. If $x ∈ B$ and $x ∈ C$, the same is true. Btdo. intersection we have $x ∈ (A ∪ B) ∩ (A ∪ C)$.
+    - ❎ If $x ∈ (A ∪ B) ∩ (A ∪ C)$ then it is in $A ∪ B$ and $A ∪ C$. If it is in $A$ then it is in $A ∪ (B ∩ C)$. If it is in $B$ or $C$
     - Assuming $x ∈ S$ for every proposition in the sets above, we get $(a ∨ b) ∧ (a ∨ c) ≡ a ∨ (b ∧ c)$.
     - If a is true both sides of the conjunction on the left are true, as is the right-hand side. If a is false, both b and c must be true on both sides. If wlog. either b or c is true but the other two variables are false both sides will be false as they are if all three variables are false.
-    - ❎ (use membership tables)
+    - ✅ (use membership tables)
 
 24. Let A, B, and C be sets. Show that $(A − B) − C = (A − C) − (B − C)$.
     - If $x ∈ (A − B) − C$ then $x$ must be in $A$ but not in $B$ or $C$. ⭕ Thus $x ∈ A − C$, but $x ∉ B − C$ , so $x$ is in the right-hand side.
@@ -214,9 +214,9 @@ In Exercises 5–10 assume that A is a subset of some underlying universal set U
 - (a) A ∪ B = A?
   - B ⊆ A
 - (b) A ∩ B = A?
-  - ❌ B = A ❎ A ⊆ B
+  - ❌ B = A ✅ A ⊆ B
 - (c) A − B = A?
-  - ❌ B = Ø ❎ A and B are disjoint: A ∩ B = Ø
+  - ❌ B = Ø ✅ A and B are disjoint: A ∩ B = Ø
 - (d) A ∩ B = B ∩ A?
   - Nothing more specific as the sets are identical.
 - (e) A − B = B − A?
@@ -226,10 +226,10 @@ In Exercises 5–10 assume that A is a subset of some underlying universal set U
 30. Can you conclude that A = B if A, B, and C are sets such that
 - (a) A ∪ C = B ∪ C?
   - ❌ Yes; any element in the unions that is not in C is in A or B. Then stating equality means A = B.
-  - ❎ No; For instance, if A and B are both subsets of C , then this equation will always hold, and A need not equal B .
+  - ✅ No; For instance, if A and B are both subsets of C , then this equation will always hold, and A need not equal B .
 - (b) A ∩ C = B ∩ C?
   - ❌ Yes; even if A and B are subsets of C they have to intersect with C over the same elements.
-  - ❎ No; let C = ∅
+  - ✅ No; let C = ∅
 - (c) A ∪ C = B ∪ C and A ∩ C = B ∩ C?
   - ⭕ By putting the two conditions together, we can now conclude that A = B . By symmetry, it suffices to prove that A ⊆ B . Suppose that x ∈ A. There are two cases. If x ∈ C , then x ∈ A ∩ C = B ∩ C , which forces x ∈ B . On the other hand, if x ∉ C , then because x ∈ A ∪ C = B ∪ C , we must have x ∈ B .
 
@@ -237,11 +237,11 @@ In Exercises 5–10 assume that A is a subset of some underlying universal set U
     - Def: $\overline{A} = \{x ∈ U | x ∉ A\}$
     - Def: $A ⊆ B = ∀x(x ∈ A → x ∈ B)$
     - Given: $A ⊆ U$, $B ⊆ U$
-    - ✅ If $A ⊆ B$, then either both sets are equal, which means their difference from $U$ will also be equal ($\overline{B} = \overline{A}$) or there is an $x ∈ B ∧ x ∉ A$ which means $x ∈ B ∩ \overline{A}$. So it is not in $\overline{B}$ but in $\overline{A}$. Therefore $\overline{B} ⊆ \overline{A}$.
+    - ❎ If $A ⊆ B$, then either both sets are equal, which means their difference from $U$ will also be equal ($\overline{B} = \overline{A}$) or there is an $x ∈ B ∧ x ∉ A$ which means $x ∈ B ∩ \overline{A}$. So it is not in $\overline{B}$ but in $\overline{A}$. Therefore $\overline{B} ⊆ \overline{A}$.
     - If $\overline{B} ⊆ \overline{A}$, then they are either equal which makes $A ⊆ B$ true or there is an $x ∈ \overline{A} ∧ x ∉ \overline{B}$ which in the context of $U$ means $x ∉ A ∧ x ∈ B$, therefore $A ⊆ B$.
-    - ❎ This is the set-theoretic version of the contrapositive law for logic, which says that $p → q$ is logically equivalent to $¬q → ¬p$. We argue as follows. $A ⊆ B ≡ ∀x(x ∈ A → x ∈ B) ≡ ∀x(x ∉ B→ x ∉ A) ≡ ∀x(x ∈ \overline{B} → x ∈ \overline{A}) ≡ \overline{B} ⊆ \overline{A}$
+    - ✅ This is the set-theoretic version of the contrapositive law for logic, which says that $p → q$ is logically equivalent to $¬q → ¬p$. We argue as follows. $A ⊆ B ≡ ∀x(x ∈ A → x ∈ B) ≡ ∀x(x ∉ B→ x ∉ A) ≡ ∀x(x ∈ \overline{B} → x ∈ \overline{A}) ≡ \overline{B} ⊆ \overline{A}$
 
-The symmetric difference of A and B, denoted by A ⊕ B, is the set containing those elements in either A or B, but not in both A and B.
+The **symmetric difference** of $A$ and $B$, denoted by $A ⊕ B$, is the set containing those elements in either $A$ or $B$, but not in both $A$ and $B$.
 
 32. Find the symmetric difference of {1, 3, 5} and {1, 2, 3}.
     - {2, 5}
@@ -253,8 +253,8 @@ The symmetric difference of A and B, denoted by A ⊕ B, is the set containing t
     - (see notes)
 
 35. Show that A ⊕ B = (A ∪ B) − (A ∩ B).
-    - ✅ If $x ∈ A ⊕ B$ then x cannot be element of both A and B; $x ∉ A ∩ B$. But every x must be in A or B; $A ∪ B$. By writing the difference both conditions are included; $(A ∪ B) − (A ∩ B)$. Conversely if $x ∈ (A ∪ B) − (A ∩ B)$ then $x ∈ A ∪ B$ and $x ∉ A ∩ B$.
-    - ❎ This is just a restatement of the definition. An element is in $(A ∪ B) − (A ∩ B)$ if it is in the union, but not in the intersection.
+    - ❎ If $x ∈ A ⊕ B$ then x cannot be element of both A and B; $x ∉ A ∩ B$. But every x must be in A or B; $A ∪ B$. By writing the difference both conditions are included; $(A ∪ B) − (A ∩ B)$. Conversely if $x ∈ (A ∪ B) − (A ∩ B)$ then $x ∈ A ∪ B$ and $x ∉ A ∩ B$.
+    - ✅ This is just a restatement of the definition. An element is in $(A ∪ B) − (A ∩ B)$ if it is in the union, but not in the intersection.
 
 36. Show that A ⊕ B = (A − B) ∪ (B − A).
     - If $x ∈ A ⊕ B$ then $(x ∈ A ∧ x ∉ B) ∨ (x ∉ A ∧ x ∈ B)$. Which bd. is $(A − B) ∪ (B − A)$.
@@ -271,11 +271,11 @@ The symmetric difference of A and B, denoted by A ⊕ B, is the set containing t
 
 38. Show that if A and B are sets, then
 - (a) $A ⊕ B = B ⊕ A$
-  - ✅ As the logical or is commutative $(x ∈ A ∧ x ∉ B) ∨ (x ∉ A ∧ x ∈ B)$ is the same as $(x ∉ A ∧ x ∈ B) ∨ (x ∈ A ∧ x ∉ B)$
-  - ❎ This is clear from the symmetry (between A and B) in the definition of symmetric difference.
+  - ❎ As the logical or is commutative $(x ∈ A ∧ x ∉ B) ∨ (x ∉ A ∧ x ∈ B)$ is the same as $(x ∉ A ∧ x ∈ B) ∨ (x ∈ A ∧ x ∉ B)$
+  - ✅ This is clear from the symmetry (between A and B) in the definition of symmetric difference.
 - (b) $(A ⊕ B) ⊕ B = A$
   - ❌ If $x ∈ A ⊕ B$, x can be in $B$ but if $x ∈ (A ⊕ B) ⊕ B$, it cannot be in $B$ and $A ⊕ B$, so x must be in $A$.
-  - ❎ We prove two things. To show that $A ⊆ (A ⊕ B) ⊕ B$, suppose $x ∈ A$. If $x ∈ B$, then $x ∉ A ⊕ B$, so x is an element of the right-hand side. On the other hand if $x ∉ B$ , then $x ∈ A ⊕ B$, so again x is in the right-hand side. Conversely, suppose x is an element of the right-hand side. There are two cases. If $x ∉ B$, then necessarily $x ∈ A ⊕ B$, whence $x ∈ A$. If $x ∈ B$, then necessarily $x ∉ A ⊕ B$, and the only way for that to happen (since $x ∈ B$) is for x to be in $A$.
+  - ✅ We prove two things. To show that $A ⊆ (A ⊕ B) ⊕ B$, suppose $x ∈ A$. If $x ∈ B$, then $x ∉ A ⊕ B$, so x is an element of the right-hand side. On the other hand if $x ∉ B$ , then $x ∈ A ⊕ B$, so again x is in the right-hand side. Conversely, suppose x is an element of the right-hand side. There are two cases. If $x ∉ B$, then necessarily $x ∈ A ⊕ B$, whence $x ∈ A$. If $x ∈ B$, then necessarily $x ∉ A ⊕ B$, and the only way for that to happen (since $x ∈ B$) is for x to be in $A$.
 
 39. What can you say about the sets A and B if $A ⊕ B = A$?
     - $A ⊕ Ø = (A − Ø) ∪ (Ø − A) = A ∪ Ø = A$.
@@ -283,12 +283,12 @@ The symmetric difference of A and B, denoted by A ⊕ B, is the set containing t
     - ✔ We can conclude that $B = Ø$. To see this, suppose that $B$ contains some element $b$. If $b ∈ A$, then $b$ is excluded from $A ⊕ B$, so $A ⊕ B$ cannot equal $A$. On the other hand, if $b ∉ A$, then $b$ must be in $A ⊕ B$, so again $A ⊕ B$ cannot equal $A$. Thus in either case, $A ⊕ B ≠ A$. We conclude that $B$ cannot have any elements.
 
 40. (∗) Determine whether the symmetric difference is associative; that is, if A, B, and C are sets, does it follow that A ⊕ (B ⊕ C) = (A ⊕ B) ⊕ C?
-    - ✅ If $x ∈ A ⊕ (B ⊕ C)$ then $x ∉ A ∩ (B ∩ C)$ which is equivalent to $x ∉ (A ∩ B) ∩ C$, so $x ∈ (A ⊕ B) ⊕ C$.
-    - ❎ This is an identity; each side consists of those things that are in an odd number of the sets A, B, and C.
+    - ❎ If $x ∈ A ⊕ (B ⊕ C)$ then $x ∉ A ∩ (B ∩ C)$ which is equivalent to $x ∉ (A ∩ B) ∩ C$, so $x ∈ (A ⊕ B) ⊕ C$.
+    - ✅ This is an identity; each side consists of those things that are in an odd number of the sets A, B, and C.
 
 41. (∗) Suppose that A, B, and C are sets such that $A ⊕ C = B ⊕ C$. Must it be the case that $A = B$?
     - Yes; ❌ as the intersection are excluded, no subset-relationships are possible. Additionally if $A ⊕ C = C$ or $B ⊕ C = C$ then A and B are both the empty set.
-    - ❎ To show that $A = B$, we need to show that $x ∈ A$ implies $x ∈ B$ and conversely. By symmetry, it will be enough to show one direction of this. So assume that $A ⊕ C = B ⊕ C$, and let $x ∈ A$ be given. There are two cases to consider, depending on whether $x ∈ C$. If $x ∈ C$, then by definition we can conclude that $x ∉ A ⊕ C$. Therefore $x tf: B ⊕ C$. Now if $x$ were not in $B$, then $x$ would be in $B ⊕ C$ (since $x ∈ C$ by assumption). Since this is not true, we conclude that $x ∈ B$, as desired. For the other case, assume that $x ∉ C$. Then $x ∈ A ⊕ C$. Therefore $x ∈ B ⊕ C$ as well. Again, if $x$ were not in $B$, then it could not be in $B ⊕ C$ (since $x ∉ C$ by assumption). Once again we conclude that $x ∈ B$, and the proof is complete.
+    - ✅ To show that $A = B$, we need to show that $x ∈ A$ implies $x ∈ B$ and conversely. By symmetry, it will be enough to show one direction of this. So assume that $A ⊕ C = B ⊕ C$, and let $x ∈ A$ be given. There are two cases to consider, depending on whether $x ∈ C$. If $x ∈ C$, then by definition we can conclude that $x ∉ A ⊕ C$. Therefore $x tf: B ⊕ C$. Now if $x$ were not in $B$, then $x$ would be in $B ⊕ C$ (since $x ∈ C$ by assumption). Since this is not true, we conclude that $x ∈ B$, as desired. For the other case, assume that $x ∉ C$. Then $x ∈ A ⊕ C$. Therefore $x ∈ B ⊕ C$ as well. Again, if $x$ were not in $B$, then it could not be in $B ⊕ C$ (since $x ∉ C$ by assumption). Once again we conclude that $x ∈ B$, and the proof is complete.
 
 42. If A, B, C, and D are sets, does it follow that (A ⊕ B) ⊕ (C ⊕ D) = (A ⊕ C) ⊕ (B ⊕ D)?
     - Yes, because every set appears an odd number of times.
@@ -310,34 +310,34 @@ The symmetric difference of A and B, denoted by A ⊕ B, is the set containing t
 
 47. Let $A_i = \{1, 2, 3, ..., i\}$ for $i = 1, 2, 3, ...$ . Find
 - (a) ❓ $\bigcup\limits_{i=1}^{n} A_i$
-  - ❎ The union of these sets is the set of elements that appear in at least one of them. In this case the sets are "increasing": $A_1 ⊆ A_2 ⊆ · · · ⊆ A_n$. Therefore every element in any of the sets is in $A_n$, so the union is $A_n= \{1,2, ... ,n\}$.
+  - ✅ The union of these sets is the set of elements that appear in at least one of them. In this case the sets are "increasing": $A_1 ⊆ A_2 ⊆ · · · ⊆ A_n$. Therefore every element in any of the sets is in $A_n$, so the union is $A_n= \{1,2, ... ,n\}$.
 - (b) $\bigcap\limits_{i=1}^{n} A_i$
   - As in the intersection every element must appear in all sets and the sets are "increasing" (see above), $A_1= \{1\}$.
 
 48. Let $A_i = \{. . . , −2, −1, 0, 1, . . . , i\}$. Find
 - (a) $\bigcup\limits_{i=1}^{n} A_i$
   - ❌ $A_n = \{. . . , −2, −1, 0, 1\}$.
-  - ❎ We note that these sets are increasing, that is, $A_1 ⊆ A_2 ⊆ A_3 ⊆ · · ·$. Therefore, the union of any collection of these sets is just the one with the largest subscript, and the intersection is just the one with the smallest subscript.
+  - ✅ We note that these sets are increasing, that is, $A_1 ⊆ A_2 ⊆ A_3 ⊆ · · ·$. Therefore, the union of any collection of these sets is just the one with the largest subscript, and the intersection is just the one with the smallest subscript.
   - $A_n = \{. . . , −2, −1, 0, 1, . . . , n\}$.
 - (b) $\bigcap\limits_{i=1}^{n} A_i$
-  - ⭕❎ $A_1 = \{. . . , −2, −1, 0, 1\}$.
+  - ⭕✅ $A_1 = \{. . . , −2, −1, 0, 1\}$.
 
 49. Let Ai be the set of all nonempty bit strings (that is, bit strings of length at least one) of length not exceeding $i$. Find
 - (a) $\bigcup\limits_{i=1}^{n} A_i$
-  - ⭕❎  Here the sets are increasing. A bit string of length not exceeding 1 is also a bit string of length not exceeding 2, so $A_1 ⊆ A_2$. Similarly, $A_2 ⊆ A_3 ⊆ A_4 ⊆ ··· ⊆ A_n$. Therefore the union of the sets $A_1, A_2, ... , A_n$ is just $A_n$ itself.
+  - ⭕✅  Here the sets are increasing. A bit string of length not exceeding 1 is also a bit string of length not exceeding 2, so $A_1 ⊆ A_2$. Similarly, $A_2 ⊆ A_3 ⊆ A_4 ⊆ ··· ⊆ A_n$. Therefore the union of the sets $A_1, A_2, ... , A_n$ is just $A_n$ itself.
 - (b) $\bigcap\limits_{i=1}^{n} A_i$
   - $A_1 = \{0, 1\}$
 
 50. Find (1) $\bigcup_{i=1}^{∞} A_i$  and (2) $\bigcap_{i=1}^{∞} A_i$ if for every positive integer i,
 - (a) $A_i = {i, i + 1, i + 2, . . .}$
   - (1) $ℤ⁺$ ✔ As $i$ increases, the sets get smaller: $· · · ⊂ A_3 ⊂ A_2 ⊂ A_1$. All the sets are subsets of $A_1$, which is the set of positive integers $ℤ⁺$.
-  - (2) ❌ $ℤ⁺$ ❎ $Ø$ Every positive integer is excluded from at least one of the sets (in integers, fact from infinitely  many), so $Ø$
+  - (2) ❌ $ℤ⁺$ ✅ $Ø$ Every positive integer is excluded from at least one of the sets (in integers, fact from infinitely  many), so $Ø$
 - (b) $A_i = {0, i}$
   - (1) $ℕ$
   - (2) $\{0\}$
 - (c) $A_i = (0, i)$, that is, the set of real numbers $x$ with $0 < x < i$.
   - (1) $ℝ⁺$
-  - (2) ✅ $\{x ∈ ℝ⁺\,|\,0 < x < 1\}$ ❎ $(0,1)$
+  - (2) ❎ $\{x ∈ ℝ⁺\,|\,0 < x < 1\}$ ✅ $(0,1)$
 - (d) $A_i = (i, ∞)$, that is, the set of real numbers $x$ with $x > i$.
   - (1) $(1, ∞)$
   - (2) $Ø$ ✔ Notice that $∞$ is not a real number, so we cannot write $A_i = \{∞\}$
@@ -347,8 +347,8 @@ The symmetric difference of A and B, denoted by A ⊕ B, is the set containing t
   - (1) $ℤ$
   - (2) $\{−1, 0, 1\}$
 - (b) $A_i = \{−i, i\}$
-  - (1) ✅ $\{x ∈ ℤ\,|\,x ≠ 0\}$ ❎ $ℤ - \{0\}$
-  - (2) ❌ $\{−1, 1\}$ ✅ $Ø$ (all sets are disjoint)
+  - (1) ❎ $\{x ∈ ℤ\,|\,x ≠ 0\}$ ✅ $ℤ - \{0\}$
+  - (2) ❌ $\{−1, 1\}$ ❎ $Ø$ (all sets are disjoint)
 - (c) $A_i = [−i, i]$, that is, the set of real numbers $x$ with $−i ≤ x ≤ i$.
   - (1) $ℝ$
   - (2) $[−1, 1]$
@@ -372,7 +372,7 @@ The symmetric difference of A and B, denoted by A ⊕ B, is the set containing t
 
 55. What is the bit string corresponding to the difference of two sets?
     - ❌ all zeros
-    - ❎  We are given two bit strings, representing two sets. We want to represent the set of elements that are in the first set but not the second. Thus the bit in the ith position of the bit string for the difference is 1 if the ith bit of the first string is 1 and the ith bit of the second string is 0, and is 0 otherwise.
+    - ✅  We are given two bit strings, representing two sets. We want to represent the set of elements that are in the first set but not the second. Thus the bit in the ith position of the bit string for the difference is 1 if the ith bit of the first string is 1 and the ith bit of the second string is 0, and is 0 otherwise.
 
 56. What is the bit string corresponding to the symmetric difference of two sets?
     - The bitstring will have 1 if the bit at the ith position of only one of the sets is 1 and 0 otherwise. ✔ XOR

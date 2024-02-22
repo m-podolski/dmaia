@@ -46,8 +46,8 @@
 |❓|Not Attempted (too hard)|
 |❕|Not Attempted (too easy)|
 |❔|Not Attempted (skipped)|
-|✅|Correct (with a different possible solution)|
-|❎|Correct (from solutions guide)|
+|❎|Correct (with a different possible solution)|
+|✅|Correct (from solutions guide)|
 |✔|Additional Info (from solutions guide)|
 |⚠️ / ⚠️ ... ⚠️|Unable to understand / to understand part|
 
@@ -58,3 +58,5 @@
 |bd.|By definition|
 |btdo.|By the definition of|
 |wlog.|Without loss of generality|
+|lhs.|left-hand-side|
+|rhs.|right-hand-side|

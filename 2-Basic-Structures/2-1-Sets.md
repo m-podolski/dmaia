@@ -107,7 +107,7 @@
 
 18. Find two sets A and B such that A ∈ B and A ⊆ B.
     - A = ∅
-    - B = ❌∅ ❎{∅}
+    - B = ❌∅ ✅{∅}
 
 19. What is the cardinality of each of these sets?
 - (a) {a} **1**
@@ -117,9 +117,9 @@
 
 20. What is the cardinality of each of these sets?
 - (a) ∅ **0**
-- (b) {∅} **❌0 ❎1**
-- (c) {∅, {∅}} **❌1 ❎2**
-- (d) {∅, {∅}, {∅, {∅}}} **❌2 ❎3**
+- (b) {∅} **❌0 ✅1**
+- (c) {∅, {∅}} **❌1 ✅2**
+- (d) {∅, {∅}, {∅, {∅}}} **❌2 ✅3**
 
 21. Find the power set of each of these sets, where a and b are distinct elements.
 - (a) {a} $\{∅,\{a\}\}$
@@ -131,10 +131,10 @@
     - ✔ The union of all the sets in the power set of a set X must be exactly X . In other words, we can recover X from its power set, uniquely. Therefore the answer is yes.
 
 23. How many elements does each of these sets have where a and b are distinct elements? (P = Powerset)
-- (a) P({a, b, {a, b}}) **❌6 ❎8**
-- (b) P({∅, a, {a}, {{a}}}) **❌12 ❎16**
-- (c) P(P(∅)) **❌1 ❎2 {∅, {∅}}**
-  - ❎ The power set of the empty set has 2⁰ = 1 element. The power set of this set therefore has 2¹ = 2 elements.
+- (a) P({a, b, {a, b}}) **❌6 ✅8**
+- (b) P({∅, a, {a}, {{a}}}) **❌12 ✅16**
+- (c) P(P(∅)) **❌1 ✅2 {∅, {∅}}**
+  - ✅ The power set of the empty set has 2⁰ = 1 element. The power set of this set therefore has 2¹ = 2 elements.
 
 24. Determine whether each of these sets is the power set of a set, where a and b are distinct elements.
 - (a) ∅
@@ -168,7 +168,7 @@
     - This is the set of ordered triples (a,b,c) as definded above which maps every airline to every combination of cities. It could be used for assigning alternative flights with different airlines.
 
 30. Suppose that A × B = ∅, where A and B are sets. What can you conclude?
-    - ❌Both sets ❎at least one of the sets must equal the empty set.
+    - ❌Both sets ✅at least one of the sets must equal the empty set.
 
 31. Let A be a set. Show that ∅ × A = A × ∅ = ∅.
     - For A × B to contain at least one element (a,b) both sets must have at least one element. This is not the case here (see above).
@@ -201,8 +201,8 @@
     - $m^n$
 
 38. Show that A × B ≠ B × A, when A and B are nonempty, unless A = B.
-    - ✅ Assuming A≠B, a∈A and b∈B, A×B yields ordered pairs (a,b) while A×B yields (b,a). If A=B however (a,b)=(b,a).
-    - ❎ Suppose A ≠ B and neither A nor B is empty. We must prove that A × B ≠ B × A. Since A ≠ B , either we can find an element x that is in A but not B , or vice versa. The two cases are similar, so without loss of generality, let us assume that x is in A but not B . Also, since B is not empty, there is some element y ∈ B . Then (x, y) is in A × B by definition, but it is not in B × A since x ∉ B . Therefore A × B ≠ B × A.
+    - ❎ Assuming A≠B, a∈A and b∈B, A×B yields ordered pairs (a,b) while A×B yields (b,a). If A=B however (a,b)=(b,a).
+    - ✅ Suppose A ≠ B and neither A nor B is empty. We must prove that A × B ≠ B × A. Since A ≠ B , either we can find an element x that is in A but not B , or vice versa. The two cases are similar, so without loss of generality, let us assume that x is in A but not B . Also, since B is not empty, there is some element y ∈ B . Then (x, y) is in A × B by definition, but it is not in B × A since x ∉ B . Therefore A × B ≠ B × A.
 
 39. Explain why A × B × C and (A × B) × C are not the same.
     - As a cartesian product A × B results in a set of ordered tuples a product with these ((A × B) × C) will yield elements of the form ((a,b),c).
@@ -217,7 +217,7 @@
 - (b) ∃x ∈ Z (x² = 2)
   - There is at least one integer whose square is 2. False.
 - (c) ∀x ∈ Z (x² > 0)
-  - The square of all integers is greater than 0. ❌ True. ❎ 0²=0
+  - The square of all integers is greater than 0. ❌ True. ✅ 0²=0
 - (d) ∃x ∈ R (x² = x)
   - There is a real number whose sqaure is equal to itself. True (1).
 
@@ -238,15 +238,15 @@
   - {x ∈ ℤ | x ∉ {0,1}}
   - ✔ Z-{0,1} = { ... ,-2,-1,2,3,4, ... }
 - (c) R(x): 2x + 1 = 0
-  - ❌ {-1/2} (not an integer) ❎ ∅
+  - ❌ {-1/2} (not an integer) ✅ ∅
 
 44. Find the truth set of each of these predicates where the domain is the set of integers.
 - (a) P(x): x³ ≥ 1
-  - ❌ ℤ-{0} ❎ {x ∈ Z | x ≥ 1}
+  - ❌ ℤ-{0} ✅ {x ∈ Z | x ≥ 1}
 - (b) Q(x): x² = 2
   - ∅
 - (c) R(x): x < x²
-  - ❌ ℤ-{-1,0,1} ❎ ℤ-{0,1}
+  - ❌ ℤ-{-1,0,1} ✅ ℤ-{0,1}
 
 45. (∗) The defining property of an ordered pair is that two ordered pairs are equal if and only if their first elements are equal and their second elements are equal. Surprisingly, instead of taking the ordered pair as a primitive concept, we can construct ordered pairs using basic notions from set theory. Show that if we define the ordered pair (a, b) to be {{a}, {a, b}}, then (a, b) = (c, d) if and only if a = c and b = d. [Hint: First show that {{a}, {a, b}} = {{c}, {c, d}} if and only if a = c and b = d.]
     - If a = c and b = d, then {{a}, {a, b}} clearly equals {{c}, {c, d}}. If {{a}, {a, b}} = {{c}, {c, d}}
@@ -266,4 +266,4 @@ By parts (a) and (b) it follows that the set S cannot be defined as it was. This
     - if A has more that 1 element, create sets with two elements by combining the first member with all the others
     - do the same with the second member, on each turn checking if the set already has been created
     - repeat the two last steps until the cardinality of the created subsets is one less than As.
-    - ❎ We can do this recursively, using the idea from Section 5.4 of reducing a problem to a smaller instance of the same problem. Suppose that the elements of the set in question are listed: $A = \{a_1 , a_2 , a_3 , ... , a_n\}$. First we will write down all the subsets that do not involve $a_n$. This is just the same problem we are talking about all over again, but with a smaller set---one with just n - 1 elements. We do this by the process we are currently describing. Then we write these same subsets down again, but this time adjoin $a_n$ to each one. Each subset of A will have been written down, then - first all those that do not include $a_n$, and then all those that do. For example, using this procedure the subsets of {p, d, q} would be listed in the order ∅, {p} , {d} , {p,d}, {q}, {p,q}, {d,q}, {p,d,q}. An alternative solution is given in the answer key in the back of the textbook.
+    - ✅ We can do this recursively, using the idea from Section 5.4 of reducing a problem to a smaller instance of the same problem. Suppose that the elements of the set in question are listed: $A = \{a_1 , a_2 , a_3 , ... , a_n\}$. First we will write down all the subsets that do not involve $a_n$. This is just the same problem we are talking about all over again, but with a smaller set---one with just n - 1 elements. We do this by the process we are currently describing. Then we write these same subsets down again, but this time adjoin $a_n$ to each one. Each subset of A will have been written down, then - first all those that do not include $a_n$, and then all those that do. For example, using this procedure the subsets of {p, d, q} would be listed in the order ∅, {p} , {d} , {p,d}, {q}, {p,q}, {d,q}, {p,d,q}. An alternative solution is given in the answer key in the back of the textbook.

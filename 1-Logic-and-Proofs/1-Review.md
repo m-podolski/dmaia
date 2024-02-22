@@ -24,7 +24,7 @@
   - p is sufficient for q
   - p, only if q
   - ❌ p is necessary for q
-  - ❎ q is necessary for p
+  - ✅ q is necessary for p
 - (b) Define the converse and contrapositive of a conditional statement.
   - converse: A conditional with "swapped" hypothesis and conclusion.
   - contrapositive: A conditional statement that hase the negated conclusion of another one as hypothesis and the negated hypothesis as its conclusion.
@@ -35,7 +35,7 @@
 4. Parts:
 - (a) What does it mean for two propositions to be logically equivalent?
   - ❌ The propositions will have the same truth value for all truth-values of their contained propositions.
-  - ❎ The compound propositions p and q are called logically equivalent if p ↔ q is a tautology.
+  - ✅ The compound propositions p and q are called logically equivalent if p ↔ q is a tautology.
 - (b) Describe the different ways to show that two compound propositions are logically equivalent.
   - Constructing truth-tables.
   - Inferring the equivalence stepwise using established equivalences or establishing new ones for intermediary steps.
@@ -60,7 +60,7 @@
   - In $∃x∀yP(x, y)$ the universal quantification is dependend on the existential one: "There exists one x, such that for all y...". In $∀y∃xP(x, y)$ its the other way around: "For all y there exists an x, such that..."
 - (b) Give an example of a predicate P(x,y) such that $∃x∀yP(x,y)$ and $∀y∃xP(x,y)$ have different truth values.
   - ❌ P: "Student x has taken course y".
-  - ❎ x+y=0 (1.5/Ex.4)
+  - ✅ x+y=0 (1.5/Ex.4)
 
 8. Describe what is meant by a valid argument in propositional logic and show that the argument “If the earth is flat, then you can sail off the edge of the earth,” “You cannot sail off the edge of the earth,” therefore, “The earth is not flat” is a valid argument.
    - ⭕ An argument is valid if and only if it is impossible for its conclusion to be false if all the premises are true.
@@ -89,7 +89,7 @@
   - q→p: ❌ if $9n+5 = 2l$, then $3n+2 = 2k+1$
     - $3n+5/3 = 2/3l$
     - $3n+2 = 2/3l+1/3 = 2(1/3l)+1/3$
-    - ❎ use contraposition of converse: $3n+2 = 2k$, then  $9n+5 = 6k-1 = 2(3k-1)+1$
+    - ✅ use contraposition of converse: $3n+2 = 2k$, then  $9n+5 = 6k-1 = 2(3k-1)+1$
 
 12. To prove that the statements p1, p2, p3, and p4 are equivalent, is it sufficient to show that the conditional statements p4 → p2, p3 → p1, and p1 → p2 are valid? If not, provide another collection of conditional statements that can be used to show that the four statements are equivalent.
     - No, but by swapping p1 → p2 for p2 → p3 and adding p1 → p4 a complete proof would be possible.
