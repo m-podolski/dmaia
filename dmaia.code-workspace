@@ -11,7 +11,8 @@
       "ol-prefix": false,
       "blanks-around-lists": false,
       "no-inline-html": false,
-      "no-space-in-code": false
+      "no-space-in-code": false,
+      "first-line-h1": false
     },
     "markdown.extension.orderedList.autoRenumber": false,
     "insert-unicode.favorites": {

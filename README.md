@@ -8,7 +8,9 @@
 |1.3|Table 7|Logical Equivalences of Conditionals|49|
 |1.6|Table 1|Rules of Inference|93|
 |2.2|Table 1|Set Identities|151|
-|2.3|Table|Properties of Floor and Ceiling|171|
+|2.3|Table 1|Properties of Floor and Ceiling|171|
+|2.4|Table 1|Sequences|183|
+|2.4|Table 2|Summations|187|
 
 ## History
 
@@ -55,8 +57,27 @@
 
 |Abbreviation|Meaning|
 | :-: |-|
+|SSG|Students Solutions Guide|
+|ISG|Instructors Solutions Guide|
 |bd.|By definition|
 |btdo.|By the definition of|
 |wlog.|Without loss of generality|
 |lhs.|left-hand-side|
 |rhs.|right-hand-side|
+
+## Keymap (PC-German)
+
+|Modifier|Key|Symbol|
+|:-|:-|:-|
+|altgr|6|¬|
+||Z|←|
+||U|↓|
+||I|→|
+||O|ø|
+||,|·|
+||.|…|
+|shift + altgr|9|±|
+||U|↑|
+||O|Ø|
+||,|×|
+||.|÷|

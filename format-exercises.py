@@ -13,14 +13,15 @@ regex_patterns: dict[re.Pattern[str], str] = {
     re.compile(r"(?m)[\r\n](?!^\(\w\)|\d{1,2}\. )"): r" ",
     # remove "- "-gaps
     re.compile(r"(\w)- (\w)"): r"\1\2",
-    # remove "P ("-gaps
-    re.compile(r"(P) (\()"): r"\1\2",
-    # remove "f ("-gaps
-    re.compile(r"(f) (\()"): r"\1\2",
     # add line above intro
     re.compile(r"(?m)^([\d]{1,2}[\.)])"): r"\n\1",
     # add bullets to part-indexes
     re.compile(r"(?m)^(\(\w\) )"): r"- \1",
+    # fix floor and ceiling
+    re.compile(r""): r"⌊",
+    re.compile(r""): r"⌋",
+    re.compile(r""): r"⌈",
+    re.compile(r""): r"⌉",
 }
 
 with open(input_file, "r") as file:
