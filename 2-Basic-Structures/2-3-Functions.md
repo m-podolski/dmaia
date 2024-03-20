@@ -1,3 +1,4 @@
+<!--
 # 2.3 Functions
 
 1. Why is f not a function from ℝ to ℝ if
@@ -218,7 +219,6 @@
     $$
 - (d) neither one-to-one nor onto.
   - $f(n) = n²$
-
 22. Determine whether each of these functions is a bijection from ℝ to ℝ.
 - (a) $f(x) = −3x + 4$
   - ❌ No; not onto. ✅ Inverse is $f^{−1} (x) = (4 − x)/3$
@@ -303,15 +303,17 @@
 - (c) $f(ℝ)$?
   - ⭕ the set of real numbers
 
+ -->
 33. Suppose that $g$ is a function from $A$ to $B$ and $f$ is a function from $B$ to $C$.
 - (a) Show that if both $f$ and $g$ are one-to-one functions, then $f ◦ g$ is also one-to-one.
   - ❎ First note that $f ◦ g$ is defined as the range of $g$ is a subset of the domain of $f$. To show that $f(g(x))$ is one-to-one when $f$ and $g$ are, we must show that $f(g(x_1)) = f(g(x_2))$ whenever $x_1 = x_2$. Assuming $x_1 = x_2$ then by the hypothesis $g(x_1) = g(x_2)$. So $f(g(x_1)) = f(g(x_2))$, again by the hypothesis.
   - ✅ Assume that both f and g are one-to-one. We need to show that $f ◦ g$ is one-to-one. This means that we need to show that if $x$ and $y$ are two distinct elements of $A$, then $f(g(x)) ≠ f(g(y))$. First, since $g$ is one-to-one, the definition tells us that $g(x) ≠ g(y)$. Second, since now $g(x)$ and $g(y)$ are distinct elements of $B$, and since $f$ is one-to-one, we conclude that $f(g(x)) ≠ f(g(y))$, as desired.
 
 - (b) Show that if both $f$ and $g$ are onto functions, then $f ◦ g$ is also onto.
-  - ❎ To show that $f ◦ g$ is onto, we must show that for any element $y$ of the codomain of $f ◦ g$ (C) there is an $x$ in the domain (A) of $f ◦ g$ such that $f(g(x)) = y$. Assuming $y ∈ B$ then as $g$ is onto, we know that there is a $x ∈ A$ such that $g(x) = y$. Assuming $z ∈ C$ as $f$ is also onto, we know that there is a $y ∈ B$ such that $f(y) = z$. So $f(g(x)) = z$.
+  - ❎ To show that $f ◦ g$ is onto, we must show that for any element $y$ of the codomain of $f ◦ g$ ($C$) there is an $x$ in the domain ($A$) of $f ◦ g$ such that $f(g(x)) = y$. Assuming $y ∈ B$ then, as $g$ is onto, we know that there is a $x ∈ A$ such that $g(x) = y$. Assuming $z ∈ C$ as $f$ is also onto, we know that there is a $y ∈ B$ such that $f(y) = z$. So $f(g(x)) = z$.
   - ✅ (Same argumentation but starting with $f$ and then looking at $g$.)
 
+<!--
 34. (∗) If $f$ and $f ◦ g$ are one-to-one, does it follow that $g$ is one-to-one? Justify your answer.
     - By the definitions we know that $f(x_1) = f(x_2)$ and $f(g(x_1)) = f(g(x_2))$ if $x_1 = x_2$. That means if $g(x_1) = g(x_2)$ then $f(g(x_1)) = f(g(x_2))$. To see that $g(x_1) = g(x_2)$ if $x_1 = x_2$ suppose ❌ $g(x_1) ≠ g(x_2)$. Then $f(g(x_1)) ≠ f(g(x_2))$ which contradicts the hypothesis.
     - ✅ To clarify the setting, suppose that $g : A → B$ and $f : B → C$, so that $f ◦ g: A → C$. We will prove that if $f ◦ g$ is one-to-one, then $g$ is also one-to-one, so not only is the answer to the question “yes,” but part of the hypothesis is not even needed. Suppose that $g$ were not one-to-one. By definition this means that there are distinct elements $a_1$ and $a_2$ in $A$ such that $g(a_1) = g(a_2)$. Then certainly $f(g(a_1)) = f(g(a_2))$, which is the same statement as $(f ◦ g)(a_1) = (f ◦ g)(a_2)$. By definition this means that $f ◦ g$ is not one-to-one, and our proof is complete.
@@ -656,7 +658,8 @@ $$
   - ✅ A fuction could enumarate the elements in $S$ (which might be anything).
 - (b) Show that if $S$ and $T$ are two sets each with $m$ elements, where $m$ is a positive integer, then there is a one-to-one correspondence between $S$ and $T$.
   - ❌ Similar to the above a bijective function could assign each element of $S$ to a distinct element of $T$ as the cardinalities match up.
-  - ✅ By part (a), there is a bijection $f$ from $S$ to $\{1,2, ... ,m\}$ and a bijection $g$ from $T$ to $\{1,2, ... ,m\}$. This tells us that $g^\{- 1\}$ is a bijection from $\{1, 2, ... , m\}$ to $T$. Then the composition $g^\{- 1\}$ of is the desired bijection from $S$ to $T$.
+  - ✅ By part (a), there is a bijection $f$ from $S$ to $\{1,2, ... ,m\}$ and a bijection $g$ from $T$ to $\{1,2, ... ,m\}$. This tells us that $g^{- 1}$ is a bijection from $\{1, 2, ... , m\}$ to $T$. Then the composition $g^{- 1} ○ f$ is the desired bijection from $S$ to $T$.
 
 80. (∗) Show that a set $S$ is infinite if and only if there is a proper subset $A$ of $S$ such that there is a one-to-one correspondence between $A$ and $S$.
-- ✅ (see instructors solutions-guide)
+- ✅ For the “if” direction, we simply need to note that if $S$ is a finite set, with cardinality $m$, then every proper subset of $S$ has cardinality strictly smaller than $m$, so there is no possible one-to-one correspondence between the elements of $S$ and the elements of the proper subset. (This is essentially the pigeonhole principle, to be discussed in Section 6.2.)
+- The “only if” direction: Let $S$ be the given infinite set. Clearly $S$ is not empty, because by definition, the empty set has cardinality $0$, a nonnegative integer. Let $a_0$ be one element of $S$, and let $A = S − \{a_0\}$. Clearly $A$ is also infinite (because if it were finite, then we would have $|S| = |A| + 1$, making $S$ finite). We will now construct a one-to-one correspondence between $S$ and $A$; think of this as a one-to-one and onto function $f$ from $S$ to $A$. In order to define $f(a_0)$, we choose an arbitrary element $a_1$ in $A$ (which is possible because $A$ is infinite) and set $f (a_0) = a_1$. Next we define $f$ at $a_1$. To do so, we choose an arbitrary element $a_2$ in $A − \{a_1\}$ (which is possible because $A − {a_1}$ is necessarily infinite) and set $f (a_1) = a_2$. Next we define $f$ at $a_2$. To do so, we choose an arbitrary element $a_3$ in $A − \{a_1 , a_2\}$ (which is possible because $A − \{a_1 , a_2 \}$ is necessarily infinite) and set $f (a_2) = a3$. Finally, we let $f$ be the identity function on $S − \{a_0, a_1 , a_2 , . . .\}$. The function thus defined has $f (a_i) = a_i+1$ for all natural numbers $i$ and $f (x) = x$ for all $x ∈ S − \{a0 , a_1 , a_2 , . . .\}$. So $f$ is one-to-one and onto.
