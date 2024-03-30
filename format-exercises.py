@@ -17,11 +17,14 @@ regex_patterns: dict[re.Pattern[str], str] = {
     re.compile(r"(?m)^([\d]{1,2}[\.)])"): r"\n\1",
     # add bullets to part-indexes
     re.compile(r"(?m)^(\(\w\) )"): r"- \1",
-    # fix floor and ceiling
+    # fix characters
+    re.compile(r"="): r"≠",
     re.compile(r""): r"⌊",
     re.compile(r""): r"⌋",
     re.compile(r""): r"⌈",
     re.compile(r""): r"⌉",
+    re.compile(r""): r"∏",
+    re.compile(r""): r"⊙",
 }
 
 with open(input_file, "r") as file:
