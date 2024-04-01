@@ -252,11 +252,11 @@ The **symmetric difference** of $A$ and $B$, denoted by $A ⊕ B$, is the set co
 34. Draw a Venn diagram for the symmetric difference of the sets A and B.
     - (see notes)
 
-35. Show that A ⊕ B = (A ∪ B) − (A ∩ B).
+35. Show that $A ⊕ B = (A ∪ B) − (A ∩ B)$.
     - ❎ If $x ∈ A ⊕ B$ then x cannot be element of both A and B; $x ∉ A ∩ B$. But every x must be in A or B; $A ∪ B$. By writing the difference both conditions are included; $(A ∪ B) − (A ∩ B)$. Conversely if $x ∈ (A ∪ B) − (A ∩ B)$ then $x ∈ A ∪ B$ and $x ∉ A ∩ B$.
     - ✅ This is just a restatement of the definition. An element is in $(A ∪ B) − (A ∩ B)$ if it is in the union, but not in the intersection.
 
-36. Show that A ⊕ B = (A − B) ∪ (B − A).
+36. Show that $A ⊕ B = (A − B) ∪ (B − A)$.
     - If $x ∈ A ⊕ B$ then $(x ∈ A ∧ x ∉ B) ∨ (x ∉ A ∧ x ∈ B)$. Which bd. is $(A − B) ∪ (B − A)$.
 
 37. Show that if A is a subset of a universal set U , then

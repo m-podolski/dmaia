@@ -1,10 +1,5 @@
 # Matrices
 
-  $A = \left[ \begin{array}{ccc}
-  x & x & x \\
-  x & x & x \\
-  \end{array} \right] $
-
 1. Let $A$ = $ \left[ \begin{array}{cccc}
 1 & 1 & 1 & 3 \\
 2 & 0 & 4 & 6 \\
