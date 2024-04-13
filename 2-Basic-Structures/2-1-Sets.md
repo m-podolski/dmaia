@@ -93,19 +93,19 @@
 13. Use a Venn diagram to illustrate the set of all months of the year whose names do not contain the letter R in the set of all months of the year.
     - (see notes)
 
-14. Use a Venn diagram to illustrate the relationship A ⊆ B and B ⊆ C.
+14. Use a Venn diagram to illustrate the relationship $A ⊆ B$ and $B ⊆ C$.
     - (see notes)
 
-15. Use a Venn diagram to illustrate the relationships A ⊂ B and B ⊂ C.
+15. Use a Venn diagram to illustrate the relationships $A ⊂ B$ and $B ⊂ C$.
     - (see notes) ❌ missing dots to indicate non-emptiness
 
-16. Use a Venn diagram to illustrate the relationships A ⊂ B and A ⊂ C.
+16. Use a Venn diagram to illustrate the relationships $A ⊂ B$ and $A ⊂ C$.
     - (see notes) ❌ assume intersection instead of inclusion (dont add points because it is unknown in which intersection-part they lie)
 
-17. Suppose that A, B, and C are sets such that A ⊆ B and B ⊆ C. Show that A ⊆ C.
+17. Suppose that A, B, and C are sets such that $A ⊆ B$ and $B ⊆ C$. Show that $A ⊆ C$.
     - If all elements of B are in C and all elements of A are in B, A must be a subset of B and C.
 
-18. Find two sets A and B such that A ∈ B and A ⊆ B.
+18. Find two sets A and B such that $A ∈ B$ and $A ⊆ B$.
     - A = ∅
     - B = ❌∅ ✅{∅}
 

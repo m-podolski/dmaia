@@ -1,4 +1,3 @@
-<!--
 # 2.3 Functions
 
 1. Why is f not a function from ℝ to ℝ if
@@ -313,7 +312,6 @@
   - ❎ To show that $f ◦ g$ is onto, we must show that for any element $y$ of the codomain of $f ◦ g$ ($C$) there is an $x$ in the domain ($A$) of $f ◦ g$ such that $f(g(x)) = y$. Assuming $y ∈ B$ then, as $g$ is onto, we know that there is a $x ∈ A$ such that $g(x) = y$. Assuming $z ∈ C$ as $f$ is also onto, we know that there is a $y ∈ B$ such that $f(y) = z$. So $f(g(x)) = z$.
   - ✅ (Same argumentation but starting with $f$ and then looking at $g$.)
 
-<!--
 34. (∗) If $f$ and $f ◦ g$ are one-to-one, does it follow that $g$ is one-to-one? Justify your answer.
     - By the definitions we know that $f(x_1) = f(x_2)$ and $f(g(x_1)) = f(g(x_2))$ if $x_1 = x_2$. That means if $g(x_1) = g(x_2)$ then $f(g(x_1)) = f(g(x_2))$. To see that $g(x_1) = g(x_2)$ if $x_1 = x_2$ suppose ❌ $g(x_1) ≠ g(x_2)$. Then $f(g(x_1)) ≠ f(g(x_2))$ which contradicts the hypothesis.
     - ✅ To clarify the setting, suppose that $g : A → B$ and $f : B → C$, so that $f ◦ g: A → C$. We will prove that if $f ◦ g$ is one-to-one, then $g$ is also one-to-one, so not only is the answer to the question “yes,” but part of the hypothesis is not even needed. Suppose that $g$ were not one-to-one. By definition this means that there are distinct elements $a_1$ and $a_2$ in $A$ such that $g(a_1) = g(a_2)$. Then certainly $f(g(a_1)) = f(g(a_2))$, which is the same statement as $(f ◦ g)(a_1) = (f ◦ g)(a_2)$. By definition this means that $f ◦ g$ is not one-to-one, and our proof is complete.

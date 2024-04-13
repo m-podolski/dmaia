@@ -18,6 +18,7 @@ regex_patterns: dict[re.Pattern[str], str] = {
     # add bullets to part-indexes
     re.compile(r"(?m)^(\(\w\) )"): r"- \1",
     # fix characters
+    re.compile(r"'="): r"≠",
     re.compile(r"="): r"≠",
     re.compile(r""): r"⌊",
     re.compile(r""): r"⌋",
