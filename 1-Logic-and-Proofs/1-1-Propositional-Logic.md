@@ -234,6 +234,7 @@ these conditional statements.
 31. Construct a truth table for each of these compound propositions.
 
 - **(a) p ∧ ¬p**
+
 $$
 \begin{array}{|c|c|}
 p & p \lor \neg p\\
@@ -242,7 +243,9 @@ T & F\\
 F & F\\
 \end{array}
 $$
+
 - **(b) p ∨ ¬p**
+
 $$
 \begin{array}{|c|c|}
 p & p \lor \neg p\\
@@ -251,7 +254,9 @@ T & T\\
 F & T\\
 \end{array}
 $$
+
 - (c) (p ∨ ¬q) → q
+
 $$
 \begin{array}{|c c|c|}
 p & q & (p \lor \neg q) \implies q\\
@@ -262,7 +267,9 @@ F & T & T\\
 F & F & F\\
 \end{array}
 $$
+
 - (d) (p ∨ q) → (p ∧ q)
+
 $$
 \begin{array}{|c c|c|}
 p & q & (p \lor q) \implies (p \land q)\\
@@ -273,7 +280,9 @@ F & T & F\\
 F & F & T\\
 \end{array}
 $$
+
 - (e) (p → q) ↔ (¬q → ¬p)
+
 $$
 \begin{array}{|c c|c|}
 p & q & (p \implies q) \iff (\neg q \implies \neg p)\\
@@ -284,7 +293,9 @@ F & T & T\\
 F & F & T\\
 \end{array}
 $$
+
 - (f) (p → q) → (q → p)
+
 $$
 \begin{array}{|c c|c|}
 p & q & (p \implies q) \implies (q \implies p)\\
@@ -299,6 +310,7 @@ $$
 33. Construct a truth table for each of these compound propo- sitions.
 
 - (a) (p ∨ q) → (p ⊕ q)
+
 $$
 \begin{array}{|c c|c|c|c|}
 p & q & p \lor q & p \oplus q & (p \lor q) \implies (p \oplus q)\\
@@ -309,7 +321,9 @@ F & T & T & T & T\\
 F & F & F & F & T\\
 \end{array}
 $$
+
 - (b) (p ⊕ q) → (p ∧ q)
+
 $$
 \begin{array}{|c c|c|}
 p & q & (p \oplus q) \implies (p \land q)\\
@@ -320,7 +334,9 @@ F & T & F\\
 F & F & T\\
 \end{array}
 $$
+
 - (c) (p ∨ q) ⊕ (p ∧ q)
+
 $$
 \begin{array}{|c c|c|}
 p & q & (p \lor q) \oplus (p \land q)\\
@@ -331,7 +347,9 @@ F & T & T\\
 F & F & F\\
 \end{array}
 $$
+
 - (d) (p ↔ q) ⊕ (¬p ↔ q)
+
 $$
 \begin{array}{|c c|c|}
 p & q & (p \iff q) \oplus (\neg p \iff q)\\
@@ -342,7 +360,9 @@ F & T & T\\
 F & F & T\\
 \end{array}
 $$
+
 - (e) (p ↔ q) ⊕ (¬p ↔ ¬r)
+
 $$
 \begin{array}{|c c c|c|}
 p & q & r & (p \iff q) \oplus (\neg p \iff \neg r)\\
@@ -357,7 +377,9 @@ F & F & T & T\\
 F & F & F & F\\
 \end{array}
 $$
+
 - (f ) (p ⊕ q) → (p ⊕ ¬q)
+
 $$
 \begin{array}{|c c|c|}
 p & q & (p \oplus q) \implies (p \oplus \neg q)\\

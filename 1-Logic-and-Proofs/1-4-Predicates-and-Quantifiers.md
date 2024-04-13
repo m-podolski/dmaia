@@ -108,20 +108,20 @@ or knows C++.
 
 13. Determine the truth value of each of these statements if the domain consists of all integers.
 - (a) $∀n(n + 1 > n)$ T
-- **(b) $∃n(2n = 3n)$ F**
-- **(c) $∃n(n = −n)$ F**
-- **(d) $∀n(3n ≤ 4n)$ T**
+- ❌ **(b) $∃n(2n = 3n)$ F**
+- ❌ **(c) $∃n(n = −n)$ F**
+- ❌ **(d) $∀n(3n ≤ 4n)$ T**
 
 14. Determine the truth value of each of these statements if the domain consists of all real numbers.
 - (a) $∃x(x3 = −1)$ T
 - (b) $∃x(x4 < x2)$ T
-- **(c) $∀x((−x)2 = x2)$ F**
+- ❌ **(c) $∀x((−x)2 = x2)$ F**
 - (d) $∀x(2x > x)$ F
 
 15. Determine the truth value of each of these statements if the domain for all variables consists of all integers.
 - (a) $∀n(n^2 ≥ 0)$ F
 - (b) $∃n(n^2 = 2)$ F
-- **(c) $∀n(n^2 ≥ n)$ F**
+- ❌ **(c) $∀n(n^2 ≥ n)$ F**
 - (d) $∃n(n^2 < 0)$ F
 
 16. Determine the truth value of each of these statements if the domain of each variable consists of all real numbers.
@@ -436,7 +436,7 @@ Exercises 38–42 deal with the translation between system specification and log
   - There is a system in state 'open' or there is one in state 'diagnostic'.
 - (d) $∃x¬S(x, available)$
   - There is a system which is not available.
-- **(e) $∀x¬S(x, working)$**
+- ❌ **(e) $∀x¬S(x, working)$**
   - No systems are working.
 
 39. Translate these specifications into English where F (p) is “Printer p is out of service,” B(p) is “Printer p is busy,” L(j ) is “Print job j is lost,” and Q(j ) is “Print job j is queued.”
@@ -482,7 +482,7 @@ Exercises 38–42 deal with the translation between system specification and log
 43. Determine whether $∀x(P(x) → Q(x))$ and $∀xP(x) → ∀xQ(x)$ are logically equivalent. Justify your answer.
     - No, because the first one can describe a part of the total and the second one makes a statement that is true for all or none.
 
-44. **Determine whether $∀x(P(x) ↔ Q(x))$ and $∀xP(x) ↔ ∀xQ(x)$ are logically equivalent. Justify your answer.**
+44. ❌ **Determine whether $∀x(P(x) ↔ Q(x))$ and $∀xP(x) ↔ ∀xQ(x)$ are logically equivalent. Justify your answer.**
     - No, see above.
 
 45. Show that $∃x(P(x) ∨ Q(x))$ and $∃xP(x) ∨ ∃xQ(x)$ are logically equivalent.
@@ -491,7 +491,7 @@ Exercises 38–42 deal with the translation between system specification and log
 Exercises 46–49 establish rules for null quantification that we can use when a quantified variable does not appear in part of a statement.
 
 46. Establish these logical equivalences, where x does not occur as a free variable in A. Assume that the domain is nonempty.
-- **(a) $(∀xP(x)) ∨ A ≡ ∀x(P(x) ∨ A)$**
+- ❌ **(a) $(∀xP(x)) ∨ A ≡ ∀x(P(x) ∨ A)$**
   - As A is independent from x it makes not difference if its value is used within or outside of the scope of x.
 - (b) $(∃xP(x)) ∨ A ≡ ∃x(P(x) ∨ A)$
   - If A is true both sides are true. If A is false, both sides are equal to $∃xP(x)$ by the law of identity. Another way of showing this is to consider that $∃xP(x)$ means that it will be true for some x which is sufficient for the whole expression being true in both cases.
@@ -527,7 +527,7 @@ Exercises 46–49 establish rules for null quantification that we can use when a
 
 53. What are the truth values of these statements?
 - (a) $∃!xP(x) → ∃xP(x)$: T
-- **(b) $∀xP(x) → ∃!xP(x)$: T/F**
+- ❌ **(b) $∀xP(x) → ∃!xP(x)$: T/F**
 - (c) $∃!x¬P(x) → ¬∀xP(x)$: T
 
 54. Write out $∃!xP(x)$, where the domain consists of the integers 1, 2, and 3, in terms of negations, conjunctions, and disjunctions.

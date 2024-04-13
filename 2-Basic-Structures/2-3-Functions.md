@@ -477,17 +477,17 @@ Let $f$ be a function from the set $A$ to the set $B$. Let $S$ be a subset of $B
 
 (62-68 done on desmos.com)
 
-62. Draw the graph of the function $f(n) = 1 − n²$ from ℤ to ℤ.
+62. ❔ Draw the graph of the function $f(n) = 1 − n²$ from ℤ to ℤ.
 
-63. Draw the graph of the function $f(x) = ⌊2x⌋$ from ℝ to ℝ.
+63. ❔ Draw the graph of the function $f(x) = ⌊2x⌋$ from ℝ to ℝ.
 
-64. Draw the graph of the function $f(x) = ⌊x/2⌋$ from ℝ to ℝ.
+64. ❔ Draw the graph of the function $f(x) = ⌊x/2⌋$ from ℝ to ℝ.
 
-65. Draw the graph of the function $f(x) = ⌊x⌋ + ⌊x/2⌋$ from ℝ to ℝ.
+65. ❔ Draw the graph of the function $f(x) = ⌊x⌋ + ⌊x/2⌋$ from ℝ to ℝ.
 
-66. Draw the graph of the function $f(x) = ⌈x⌉ + ⌊x/2⌋$ from ℝ to ℝ.
+66. ❔ Draw the graph of the function $f(x) = ⌈x⌉ + ⌊x/2⌋$ from ℝ to ℝ.
 
-67. Draw graphs of each of these functions.
+67. ❔ Draw graphs of each of these functions.
 - (a) $f(x) = ⌊x + 1/2⌋$
 - (b) $f(x) = ⌊2x + 1⌋$
 - (c) $f(x) = ⌈x/3⌉$
@@ -496,7 +496,7 @@ Let $f$ be a function from the set $A$ to the set $B$. Let $S$ be a subset of $B
 - (f) $f(x) = ⌊2x⌋⌈x/2⌉$
 - (g) $f(x) = ⌈⌊x − 1/2⌋ + 1/2⌉$
 
-68. Draw graphs of each of these functions.
+68. ❔ Draw graphs of each of these functions.
 - (a) $f(x) = ⌈3x − 2⌉$
 - (b) $f(x) = ⌈0.2x⌉$
 - (c) $f(x) = ⌊−1/x⌋$
@@ -658,6 +658,6 @@ $$
   - ❌ Similar to the above a bijective function could assign each element of $S$ to a distinct element of $T$ as the cardinalities match up.
   - ✅ By part (a), there is a bijection $f$ from $S$ to $\{1,2, ... ,m\}$ and a bijection $g$ from $T$ to $\{1,2, ... ,m\}$. This tells us that $g^{- 1}$ is a bijection from $\{1, 2, ... , m\}$ to $T$. Then the composition $g^{- 1} ○ f$ is the desired bijection from $S$ to $T$.
 
-80. (∗) Show that a set $S$ is infinite if and only if there is a proper subset $A$ of $S$ such that there is a one-to-one correspondence between $A$ and $S$.
+80. ❓ (∗) Show that a set $S$ is infinite if and only if there is a proper subset $A$ of $S$ such that there is a one-to-one correspondence between $A$ and $S$.
 - ✅ For the “if” direction, we simply need to note that if $S$ is a finite set, with cardinality $m$, then every proper subset of $S$ has cardinality strictly smaller than $m$, so there is no possible one-to-one correspondence between the elements of $S$ and the elements of the proper subset. (This is essentially the pigeonhole principle, to be discussed in Section 6.2.)
 - The “only if” direction: Let $S$ be the given infinite set. Clearly $S$ is not empty, because by definition, the empty set has cardinality $0$, a nonnegative integer. Let $a_0$ be one element of $S$, and let $A = S − \{a_0\}$. Clearly $A$ is also infinite (because if it were finite, then we would have $|S| = |A| + 1$, making $S$ finite). We will now construct a one-to-one correspondence between $S$ and $A$; think of this as a one-to-one and onto function $f$ from $S$ to $A$. In order to define $f(a_0)$, we choose an arbitrary element $a_1$ in $A$ (which is possible because $A$ is infinite) and set $f (a_0) = a_1$. Next we define $f$ at $a_1$. To do so, we choose an arbitrary element $a_2$ in $A − \{a_1\}$ (which is possible because $A − {a_1}$ is necessarily infinite) and set $f (a_1) = a_2$. Next we define $f$ at $a_2$. To do so, we choose an arbitrary element $a_3$ in $A − \{a_1 , a_2\}$ (which is possible because $A − \{a_1 , a_2 \}$ is necessarily infinite) and set $f (a_2) = a3$. Finally, we let $f$ be the identity function on $S − \{a_0, a_1 , a_2 , . . .\}$. The function thus defined has $f (a_i) = a_i+1$ for all natural numbers $i$ and $f (x) = x$ for all $x ∈ S − \{a0 , a_1 , a_2 , . . .\}$. So $f$ is one-to-one and onto.

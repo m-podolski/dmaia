@@ -65,7 +65,7 @@
     - beaches new jersey
     - beaches jersey not new
 
-15. (*) Each inhabitant of a remote village always tells the truth or always lies. A villager will give only a “Yes” or a “No” response to a question a tourist asks. Suppose you are a tourist visiting this area and come to a fork in the road. One branch leads to the ruins you want to visit; the other branch leads deep into the jungle. A villager is standing at the fork in the road. What one question can you ask the villager to determine which branch to take?
+15. (*) ❓ Each inhabitant of a remote village always tells the truth or always lies. A villager will give only a “Yes” or a “No” response to a question a tourist asks. Suppose you are a tourist visiting this area and come to a fork in the road. One branch leads to the ruins you want to visit; the other branch leads deep into the jungle. A villager is standing at the fork in the road. What one question can you ask the villager to determine which branch to take?
 
 17. When three professors are seated in a restaurant, the host- ess asks them: “Does everyone want coffee?” The first professor says: “I do not know.” The second professor then says: “I do not know.” Finally, the third professor says: “No, not everyone wants coffee.” The hostess comes back and gives coffee to the professors who want it. How did she figure out who wanted coffee?
 
@@ -99,7 +99,7 @@
     - A = T, then contradiction
     - A = F, then B = T
 
-25. **A says “I am the knight,” B says “I am the knave,” and C says “B is the knight.”**
+25. ❓ **A says “I am the knight,” B says “I am the knave,” and C says “B is the knight.”**
 
 27. A says “I am the knight,” B says “A is telling the truth,” and C says “I am the spy.”
 
